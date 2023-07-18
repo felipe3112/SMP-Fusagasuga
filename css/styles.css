@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;500;700&family=Merriweather+Sans:ital,wght@0,300;0,700;0,800;1,800&family=Montserrat:wght@300;400;600;800&family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&family=Open+Sans:wght@300;400&family=Overpass:wght@100;300;500;800&family=Roboto:wght@300;400;700;900&display=swap');
 
+/* ************************ RESET CSS ******************** */
 * {
     margin: 0;
     padding: 0;
@@ -11,20 +12,20 @@ html{
 }
 
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Times New Roman';
     width: 100%;
     max-width: 100%;
     margin: auto;
 }
 
-/* ----------------------------------------------HEADER-------------------------------------------- */
+/* **************************** HEADERS ***********************/
 
 .header-index {
     width: 100%;
-    height: 650px;
+    height: 100vh;
     overflow: hidden;
-    background: -webkit-linear-gradient(to right, hsla(152, 72%, 30%, 0.808), hsla(187, 47%, 71%, 0.767)), url(../img/fusa8.jpg);
-    background: linear-gradient(to right, hsla(27, 34%, 31%, 0.356), hsla(180, 3%, 19%, 0.562)), url(../img/fusa8.jpg);
+    background-image: -webkit-linear-gradient(to right, hsla(152, 72%, 30%, 0.808), hsla(140, 47%, 71%, 0.767)), url(../img/fusa8.jpg);
+    background-image: linear-gradient(to right, hsla(81, 34%, 31%, 0.582), hsla(120, 3%, 19%, 0.562)), url(../img/fusa8.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -32,7 +33,7 @@ body {
 
 .header-us {
     width: 100%;
-    height: 650px;
+    height: 100vh;
     overflow: hidden;
     background: #bc4e9c;
     background: -webkit-linear-gradient(to right, hsla(152, 72%, 30%, 0.808), hsla(140, 47%, 71%, 0.767)), url(../img/fusa7.jpg);
@@ -44,9 +45,9 @@ body {
 
 .header-galeria {
     width: 100%;
-    height: 650px;
+    height: 100vh;
     overflow: hidden;
-    background: #bc4e9c;
+    background: #0e975718;
     background: -webkit-linear-gradient(to right, hsla(152, 73%, 30%, 0.863), hsla(187, 47%, 71%, 0.767)), url(../img/fusa3.jpg);
     background: linear-gradient(to right, hsla(27, 28%, 32%, 0.582), hsla(180, 4%, 40%, 0.603)), url(../img/fusa3.jpg);
     background-size: cover;
@@ -56,7 +57,7 @@ body {
 
 .header-contact {
     width: 100%;
-    height: 650px;
+    height: 100vh;
     overflow: hidden;
     background: #bc4e9c;
     background: -webkit-linear-gradient(to right, hsla(152, 72%, 30%, 0.808), hsla(118, 47%, 71%, 0.767)), url(../img/fusa2.jpg);
@@ -65,12 +66,13 @@ body {
     background-attachment: fixed;
     position: relative;
 }
-/* ----------------------------------------------NAV-BAR--------------------------------------------------- */
+/* *----------------------------------------------NAV-BAR--------------------------------------------------- */
 .navbar-section {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
+    height: 5rem;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid rgba(255, 255, 255, 0.247);
@@ -88,10 +90,12 @@ body {
 .navbar__logo{
     display: flex;
     place-content: center;
+    width: 200px;
+    height: 100%;
 }
     .navbar__logo figure{
-        width: 180px;
-        height: 100px;
+        width: 170px;
+        height: 100%;
     }
     .navbar__logo figure img{
         width: 100%;
@@ -120,23 +124,23 @@ body {
     }
     .ul-lista a{
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 28px;
         padding-left: 20px;
         padding-right: 20px;
         color:#fff;
         font-size: 17px;
         text-decoration: none;
-        transition: .3s ease;
-        -webkit-transition: .3s ease;
-        -moz-transition: .3s ease;
-        -ms-transition: .3s ease;
-        -o-transition: .3s ease;
-    }
+        transition:all .3s ease;
+        -webkit-transition:all .3s ease;
+        -moz-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+        -o-transition:all .3s ease;
+}
     .ul-lista a:hover, 
     .active{
         color: #17C3B2;
         border-bottom: 4px solid #17C3B2;
-        padding-bottom: 35px;
+        padding-bottom: 23px;
     }
 
 .icons-social__nav{
@@ -198,59 +202,57 @@ body {
 header .textos-header{
     display: flex;
     flex-direction: column;
-    height: 38rem;
+    height: 100%;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
 }
 
-.textos-header h1{
-    position: absolute;
-    padding-bottom: 6rem;
-    width: 100%;
-    font-size: 4.5rem;
-    color:#fff;
-    text-shadow: 2px 2px 4px #0c5049b0;
-}
 
-.textos-header .hidden-text{
-    position: relative;
-    padding-top: 21rem
-}
+    .textos-header .textos-header__h1{
+        position: relative;
+        width: 80%;
+        height: auto;
+        font-size: 3rem;
+        color: #ffffff;
+    }
 
-.hidden-text h3{
-    color: #FFFFFF29;
-    font-size: 145px;
-    line-height: 0.8em;
-}
+    .textos-header .hidden-text{
+        position: relative;
+        width: 90%;
+    }
+        .hidden-text h3{
+            color: #FFFFFF29;
+            font-size: 145px;
+        }
 
 /* ------------------------------------------boton conocenos---------------------------------------- */
 .button-main{
-    position: absolute;
-    width: 100%;
-    padding-top: 18rem;
+    position: relative;
+    width: 80%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
-.button-main a{
-    text-decoration: none;
-    font-family: inherit;
-}
+    .button-main a{
+        text-decoration: none;
+        font-family: inherit;   
+    }
     .button-main .button-know{
         display: flex;
         padding: 0.8em 1.5em;
-        border: 1px solid #17C3B2;
+        border: 1px solid #fff;
         position: relative;
         overflow: hidden;
         background-color: transparent;
-        font-size: 18px;
+        font-size: 25px;
         transition: .6s ease;
         z-index: 1;
-        color: #17C3B2;
+        color: #fff;
     }
     .button-know::before{
         content: '';
@@ -260,7 +262,7 @@ header .textos-header{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(40deg);
-        background: #17c3b283;
+        background: #17C3B2;
         transition: .6s ease;
         display: block;
         z-index: -1;
