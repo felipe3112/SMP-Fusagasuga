@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@300;500;700&family=Merriweather+Sans:ital,wght@0,300;0,700;0,800;1,800&family=Montserrat:wght@300;400;600;800&family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&family=Open+Sans:wght@300;400&family=Overpass:wght@100;300;500;800&family=Roboto:wght@300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cardo:wght@400;700&family=Concert+One&family=Crimson+Pro:ital,wght@0,300;0,500;0,800;1,600&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;500;700;900&family=Josefin+Sans:wght@300;500;700&family=Lora:ital,wght@0,500;0,700;1,700&family=Merriweather+Sans:ital,wght@0,300;0,700;0,800;1,800&family=Montserrat:wght@300;400;600;800&family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&family=Open+Sans:wght@300;400&family=Overpass:wght@100;300;500;800&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;700;900&family=Rubik+Moonrocks&family=Spectral:ital,wght@0,200;0,300;0,500;0,700;0,800;1,600&family=Titillium+Web:wght@200;300;700;900&family=Yatra+One&display=swap');
 /* ************************ RESET CSS ******************** */
 * {
     margin: 0;
@@ -12,18 +11,18 @@ html{
 }
 
 body {
-    font-family: 'Times New Roman';
+    font-family: 'Lora';
     width: 100%;
     max-width: 100%;
     margin: auto;
+    overflow-x: hidden;
 }
 
 /* **************************** HEADERS ***********************/
 
 .header-index {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-image: -webkit-linear-gradient(to right, hsla(152, 72%, 30%, 0.808), hsla(140, 47%, 71%, 0.767)), url(../img/fusa8.jpg);
     background-image: linear-gradient(to right, hsla(81, 34%, 31%, 0.582), hsla(120, 3%, 19%, 0.562)), url(../img/fusa8.jpg);
     background-size: cover;
@@ -75,26 +74,25 @@ body {
     height: 5rem;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
-    font-family: 'Nunito Sans', sans-serif;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
+    font-family: 'Overpass';
     z-index: 10;
-    transition: background 1s ease;
-    /*Configuracióndelatransición*/
-    -webkit-transition: background 1s ease;
-    -moz-transition: background 1s ease;
-    -ms-transition: background 1s ease;
-    -o-transition: background 1s ease;
-    -webkit-transition: background 1s ease;
+    transition: all 1s ease;
+    /*Configuracióndelatransición*/-webkit-transition: background 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .navbar__logo{
     display: flex;
     place-content: center;
-    width: 200px;
+    width: 14.5rem;
     height: 100%;
 }
     .navbar__logo figure{
-        width: 170px;
+        width: 100%;
         height: 100%;
     }
     .navbar__logo figure img{
@@ -120,7 +118,6 @@ body {
     .ul-lista li{
         padding-top: 40px;
         padding-bottom: 40px;
-        text-shadow: 8px 8px 8px #0c5049b0; 
     }
     .ul-lista a{
         padding-top: 40px;
@@ -138,8 +135,8 @@ body {
 }
     .ul-lista a:hover, 
     .active{
-        color: #17C3B2;
-        border-bottom: 4px solid #17C3B2;
+        color: #DDC5A2;
+        border-bottom: 4px solid #DDC5A2;
         padding-bottom: 23px;
     }
 
@@ -171,7 +168,6 @@ body {
         border-radius: 15%;
         position: relative;
         z-index: 1;
-        box-shadow: 0px 1px 1px rgba(0,0,0,0,0.1);
         transition: all .3s ease;
         -webkit-border-radius: 15%;
         -moz-border-radius: 15%;
@@ -187,12 +183,7 @@ body {
         font-size: 20px;
     }
     .icons-social__nav .icon span:hover{
-        background-color: #17C3B2;
-        transform:translate3d(0px, -2px, 0px);
-        -webkit-transform:scale(80px);
-        -moz-transform:scale(80px);
-        -ms-transform:scale(80px);
-        -o-transform:scale(80px);
+        background-color: #523634;
 }
 
 .icono{
@@ -204,28 +195,27 @@ header .textos-header{
     flex-direction: column;
     height: 100%;
     max-width: 100%;
-    text-align: left;
+    text-align: center;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
-
-
     .textos-header .textos-header__h1{
         position: relative;
         width: 80%;
         height: auto;
         font-size: 3rem;
-        color: #ffffff;
+        color: #fff;
     }
 
     .textos-header .hidden-text{
         position: relative;
         width: 90%;
+        top: 3em;
     }
         .hidden-text h3{
             color: #FFFFFF29;
-            font-size: 145px;
+            font-size: 9em;
         }
 
 /* ------------------------------------------boton conocenos---------------------------------------- */
@@ -234,86 +224,95 @@ header .textos-header{
     width: 80%;
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
     .button-main a{
         text-decoration: none;
-        font-family: inherit;   
     }
     .button-main .button-know{
         display: flex;
-        padding: 0.8em 1.5em;
-        border: 1px solid #fff;
+        padding: 0.7rem 1.4rem;
+        border: none;
         position: relative;
         overflow: hidden;
         background-color: transparent;
-        font-size: 25px;
+        font-size: 1.4em;
         transition: .6s ease;
         z-index: 1;
         color: #fff;
-    }
+        -webkit-transition: .6s ease;
+        -moz-transition: .6s ease;
+        -ms-transition: .6s ease;
+        -o-transition: .6s ease;
+}
     .button-know::before{
         content: '';
         width: 0;
-        height: 300%;
+        height: 15rem;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(40deg);
-        background: #17C3B2;
-        transition: .6s ease;
-        display: block;
+        top: 0;
+        left: 60%;
+        right: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #523634;
+        transition: .8s ease;
         z-index: -1;
-    }
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -moz-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+        -o-transform: translate(-50%, -50%) rotate(45deg);
+        -webkit-transition: .8s ease;
+        -moz-transition: .8s ease;
+        -ms-transition: .8s ease;
+        -o-transition: .8s ease;
+}
    .button-know:hover::before{
         width: 100%;
     }
    .button-know:hover{
-        color: white;
+        color: #DDC5A2;
         cursor: pointer;
     }
-   .button-know p{
-        margin-right: 10px;
-    }
-   .slider-button{
-        filter: brightness(0) invert(1);
-    }
-   
 
 /* -------------------------------------------WAVE-------------------------------------------- */
-
-.fa {
-    padding:0;
-    width: 30px;
-    text-decoration:none;
-    margin: 5px 5px;
+.wave{
+    height: 150px; 
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.wave svg{
+    height: 100%; 
+    width: 100%;
+}
+.wave path{
+    stroke: none; 
+    fill: #fff;
 }
 
 /* ----------------------TO__TOP BTN------------------------*/
     .to__top{
-        background: #017e5e;
+        background: #B6452C;
         position: fixed;
         bottom: .5rem;
         right: 2rem;
         width: 3rem;
         height: 3rem;
-        border-radius: 30%;
-        border-color: #00c569;
+        border-radius: 5%;
         display: flex;
-        justify-content: start;
-        font-size: 2rem;
-        font-weight: 800;
-        color: #ffffff;
+        font-size: 2.5rem;
+        color: #FFFFFF;
         text-decoration: none;
         opacity: 0;
         pointer-events: none;
         transition: all .6s ease;
-        -webkit-border-radius: 30%;
-        -moz-border-radius: 30%;
-        -ms-border-radius: 30%;
-        -o-border-radius: 30%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
         -webkit-transition: all .6s ease;
         -moz-transition: all .6s ease;
         -ms-transition: all .6s ease;
@@ -322,8 +321,6 @@ header .textos-header{
 
         .to__top i{
             margin: auto;
-            width: 2.5rem;
-            height: 2.5rem;
             justify-content: center;
             align-items: center;
             display: flex;
@@ -348,13 +345,6 @@ header .textos-header{
         -moz-transform: translateY(-.5rem);
         -ms-transform: translateY(-.5rem);
         -o-transform: translateY(-.5rem);
-}
-    .to__top:active{
-        transform: scale(1.8);
-        -webkit-transform: scale(1.8);
-        -moz-transform: scale(1.8);
-        -ms-transform: scale(1.8);
-        -o-transform: scale(1.8);
 }
 
 /* ///////////////////////////////////////INDEX_CONTENT//////////////////////////////////////////////// */
@@ -396,7 +386,7 @@ main .nosotros{
         padding: 0 100px 50px;
     }
     .descripcion p{
-        font-family: 'overpass';
+        font-family: 'Overpass';
         font-size: 16px;
         font-weight: 300;
         line-height: 1.9em;
@@ -442,7 +432,7 @@ main .nosotros{
         text-align: center;
     }
     .mv-text p{
-        font-family: 'overpass';
+        font-family: 'Overpass';
         font-size: 16px;
         font-weight: 300;
         line-height: 1.9em;
@@ -562,8 +552,8 @@ main .nosotros{
 /*---------------------------------------------------- FOOTER----------------------------------*/
 
 .footer{
-    background-color: #073A54;
-    font-family: 'Nunito Sans', sans-serif;
+    background-color:#301B28;
+    font-family: 'Overpass';
     /* width: 100%; */
     display: grid;
     grid-template-rows: 3 auto;
@@ -576,7 +566,7 @@ main .nosotros{
     width: 100%;
     height: auto;
     padding: 30px 0 30px 0;
-    border-bottom: 1px solid #17C3B2;
+    border-bottom: 1px solid #DDC5A2;
 }
     .box-1{
         display: flex;
@@ -615,14 +605,14 @@ main .nosotros{
         transition: .3s ease;
     }
     .know a:hover{
-        color: #17C3B2;
-        text-shadow: 2px 2px 2px #010808;
+        color: #DDC5A2;
     }
     .box-3{
         display: flex;
         flex-direction: column;
         gap: 1rem;
         justify-content: baseline;
+        text-decoration: none;
     }
     .box-3 h2{
         color: #fff;
@@ -633,6 +623,7 @@ main .nosotros{
         flex-direction: column;
         color: #fff;
         gap: .8rem;
+        text-decoration: none;
     }
     .items a{
         text-decoration: none;
@@ -642,10 +633,11 @@ main .nosotros{
         list-style: none;
         cursor: pointer;
         transition: .3s ease;
+        display: flex;
+        gap: 1rem;
     }
     .items li:hover{
-        color: #17C3B2;
-        text-shadow: 2px 2px 2px #010808;
+        color: #DDC5A2;
     }
 
     .icons-social-footer{
@@ -659,12 +651,11 @@ main .nosotros{
     .icons-social-footer a{
         display: inline-flex;
         justify-content: center;
-        text-shadow: 4px 4px 4px #0c5049b0;
         color:#fff;
+        text-decoration: none;
     }
     .icons-social-footer a:hover{
-        color: #17C3B2;
-        text-shadow: 2px 2px 2px #010808;
+        color: #DDC5A2;
     }
 
 .grupo-2{
@@ -673,7 +664,7 @@ main .nosotros{
     width: 100%;
     height: auto;
     padding: 30px 0 30px 0;
-    border-bottom: 1px solid #17C3B2;
+    border-bottom: 1px solid #DDC5A2;
 }
     .logo-g2{
         display: flex;
@@ -706,31 +697,34 @@ main .nosotros{
         justify-content: center;
         font-size: 12px;
         color: #9e9797;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Overpass';
     }
     .design a small{
         transition: .1s ease;
         color: #fff;
     }
     .design small:hover{
-        color: #17C3B2;
-        text-shadow: 2px 2px 2px #010808;
+        color: #DDC5A2;
     }
 
 /* --------------------------- scroll personalizado -------------------------------- */
 
-body::-webkit-scrollbar{
-    width: 2.5vh; 
-    background-color: transparent;
-    border: 1px solid #17c3b2cc;
- }
-body::-webkit-scrollbar-thumb{
-    background: #17c3b2cc;
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #523634;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 /* ------------------------------formulario -----------------------------------------*/
 .contact{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Overpass';
     display: grid;
     grid-template-columns: 55% 45%;
     padding: 2em 3em 5em;
@@ -814,7 +808,7 @@ body::-webkit-scrollbar-thumb{
    /*///////////////////////////////////////////// */
 .form{
     background-image: linear-gradient(120deg, #1ef37e2a 0%, #1cebd644 100%);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Overpass';
     width: 100%;
     max-width: 100%;
     /* border-radius: 1em; */
@@ -839,12 +833,12 @@ body::-webkit-scrollbar-thumb{
         color: #094e47;
     }
     .form-container label{
-        font-family: inherit;
+        font-family: 'Overpass';
         font-size: 1rem;
         font-weight: 300;
     }
     .form-input{
-        font-family: inherit;
+        font-family: 'Overpass';
         font-size: 1rem;
         padding: .8em .8em;
         outline: none;
@@ -867,7 +861,7 @@ body::-webkit-scrollbar-thumb{
 }
 /*** ESTILOS BOTÓN GROW SKEW ***/
 .s-button{
-    font-family: inherit;
+    font-family: 'Overpass';
     font-weight: 500;
     font-size: 1em;
     width: 100%;
@@ -1009,5 +1003,10 @@ body::-webkit-scrollbar-thumb{
 
 .slider-arrow:nth-of-type(2){
     justify-self: end;
+}
+
+.slider-button{
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
 }
 

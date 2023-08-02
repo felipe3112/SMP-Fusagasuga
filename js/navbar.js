@@ -4,7 +4,7 @@ window.addEventListener("scroll", function() {
     navbar.classList.toggle("down", window.scrollY > 0)
 
     if (window.scrollY > 0) {
-        navbar.style.background = "#073A54"
+        navbar.style.background = "#301B28"
         navbar.classList.add("transition")
     } else {
         navbar.style.background = "transparent"
