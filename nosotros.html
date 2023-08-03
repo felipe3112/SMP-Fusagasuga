@@ -16,7 +16,7 @@
         <script src="https://kit.fontawesome.com/c11c0393e3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header-us">
+        <header class="header header--nosotros">
             <section class="navbar-section">
                 <div class="navbar__logo">
                     <figure>
@@ -77,9 +77,6 @@
                     <h3>¿Quienes Somos?</h3>
                 </div>
             </section>
-            <a href="#" class="to__top">
-                <i class="fa fa-chevron-up"></i>
-            </a>
               <!-- wave -->
         <div class="wave">
             <svg viewBox="0 0 400 150" preserveAspectRatio="none">
@@ -88,10 +85,10 @@
         </div>
         </header>
         <main>
-            <section class="nosotros" id="nosotros">
-                <h2 class="titulo">Sociedad de Mejoras Públicas de Fusagasugá</h2>
-                <div class="descripcion">
-                    <p>Somos una organización sin ánimo de lucro, de carácter cívico y privado,
+            <section class="section__nosotros" id="nosotros">
+                <h2 class="nosotros__titulo">Sociedad de Mejoras Públicas de Fusagasugá</h2>
+                <div class="div__descripcion">
+                    <p class="nosotros__descripcion">Somos una organización sin ánimo de lucro, de carácter cívico y privado,
                         dedicada al progreso y bienestar de nuestra comunidad. Trabajamos en
                         colaboración con entidades públicas y privadas para impulsar proyectos y
                         acciones que promuevan el desarrollo sostenible de Fusagasugá.
@@ -101,76 +98,95 @@
                         construyendo un futuro mejor para todos.
                     </p>
                 </div>
-                <div class="us-container">
-                    <img src="img/ilustracion2.svg">
-                    <div class="mv-text">
-                        <h3>
-                            <span>
-                                <p>1</p>
-                            </span>Misión</h3>
-                        <p>Nuestra misión es trabajar de manera incansable para promover el desarrollo
-                            integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser
-                            agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación,
-                            la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos
-                            fomentar la participación ciudadana, la gestión responsable de los recursos y la
-                            preservación de nuestro patrimonio, con el objetivo de construir una ciudad
-                            inclusiva, equitativa y próspera.</p>
-                        <h3>
-                            <span>
-                                <p>2</p>
-                            </span>Visión</h3>
-                        <p>
-                            Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
-                            mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como
-                            referentes en la promoción de la participación ciudadana, la protección del
-                            entorno natural y la generación de espacios de convivencia y desarrollo
-                            comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su
-                            cultura, su cuidado del medio ambiente y su espíritu de solidaridad,
-                            contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus
-                            habitantes.</p>
-                    </div>
+                <div class="div__myv">
+                        <div class="div__mision">
+                            <h2 class="nosotros__titulo">Misión</h2>
+                            <p class="nosotros__descripcion">Nuestra misión es trabajar de manera incansable para promover el desarrollo
+                                integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser
+                                agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación,
+                                la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos
+                                fomentar la participación ciudadana, la gestión responsable de los recursos y la
+                                preservación de nuestro patrimonio, con el objetivo de construir una ciudad
+                                inclusiva, equitativa y próspera.</p>
+                        </div>
+                        <div class="div__separador">
+                            <img src="" alt="">
+                        </div>
+                        <div class="div__vision">
+                            <h2 class="nosotros__titulo">Visión</h2>
+                            <p class="nosotros__descripcion"> Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
+                                mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como
+                                referentes en la promoción de la participación ciudadana, la protección del
+                                entorno natural y la generación de espacios de convivencia y desarrollo
+                                comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su
+                                cultura, su cuidado del medio ambiente y su espíritu de solidaridad,
+                                contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus
+                                habitantes.</p>
+                        </div>
                 </div>
             </section>
         </main>
-        <section class="slider">
-            <div class="slider-container">
+        <section class="section__slider">
+            <div class="div__slider">
                 <img src="assets/left.svg" class="slider-arrow" id="before">
-                <section class="slider-body slider-body-show" data-id="1">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">NAME</h2>
-                        <p class="slider-review">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit ea placeat
-                            nesciunt perferendis a.
+
+
+                <section class="slider__body slider__body--show" data-id="1">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Dr. Agustín Gómez Sarmiento.</h2>
+                        <p>Presidente fundador, es un destacado abogado, consultor y litigante con una amplia trayectoria en el campo del derecho. Con una pasión innata por la justicia y el servicio a la comunidad, ha dedicado su vida profesional a promover el desarrollo integral y sostenible de diversas organizaciones y comunidades. <br>Con un fuerte compromiso hacia su comunidad y el desarrollo sostenible de su ciudad, ha dejado una huella indeleble como líder fundador de esta organización sin fines de lucro.
+                        </p>
+                    </div>
+                    <figure class="figure__slider">
+                        <img src="img/miembros/PRESIDENTE.jpg" class="img__slider">
+                    </figure>
+                </section>
+
+                <section class="slider__body" data-id="2">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Dra. Ángela Caicedo.</h2>
+                        <p>Es una destacada abogada con una vasta experiencia en cooperación internacional y políticas públicas para el desarrollo. Su profundo compromiso con el progreso social y el bienestar colectivo la ha llevado a sobresalir en el campo del derecho y a ser un referente en la promoción del desarrollo sostenible.<br>En su rol como Vicepresidenta, la Dra. Angela Caicedo ha desempeña un papel clave en el desarrollo y ejecución de iniciativas transformadoras para la ciudad de Fusagasugá.
                         </p>
                     </div>
                     <figure class="slider_picture">
-                        <img src="img/slider1.jpg" class="slider-img">
+                        <img src="img/miembros/NAN.jpg" class="img__slider">
                     </figure>
                 </section>
-                <section class="slider-body" data-id="2">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">!Hola! Mi nombre es Pepita Perez</h2>
-                        <p class="slider-review">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, qui odio
-                            laboriosam dicta quod alias? Quo recusandae dolorem laborum!
+
+                <section class="slider__body" data-id="3">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Lilian Johanna Melo Sarria.</h2>
+                        <p>Es una talentosa y proactiva profesional que desempeña un rol fundamental como secretaria de la Sociedad de Mejoras Públicas de Fusagasugá.<br>Con una sólida formación en administración y una amplia experiencia en la gestión de oficinas, su labor es esencial para el buen funcionamiento y la eficiencia de la organización.<br>Como secretaria de la SMP, la Sra. Melo Sarria es responsable de coordinar y organizar todas las actividades administrativas y operativas de la sociedad.
                         </p>
                     </div>
-                    <figure class="slider_picture">
-                        <img src="img/slider2.jpg" class="slider-img">
+                    <figure class="figure__slider">
+                        <img src="img/miembros/NAN.jpg" class="img__slider">
                     </figure>
                 </section>
-                <section class="slider-body" data-id="3">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">!Hola! Mi nombre es Pablo Gutierrez</h2>
-                        <p class="slider-review">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum incidunt at
-                            porro alias.
+
+                <section class="slider__body" data-id="4">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Carlota Méndez</h2>
+                        <p>Es una arquitecta talentosa y comprometida que asumirá un rol vital como encargada de la tesorería de la Sociedad de Mejoras Públicas de Fusagasugá (SMP). Con una formación sólida en arquitectura y una habilidad innata para la gestión financiera, su experiencia y pasión la convierten en una candidata ideal para esta posición.<br>Como responsable de la tesorería, la Sra. Méndez será la encargada de administrar los recursos financieros de la SMP con prudencia y transparencia.
                         </p>
                     </div>
-                    <figure class="slider_picture">
-                        <img src="img/slider3.jpg" class="slider-img">
+                    <figure class="figure__slider">
+                        <img src="img/miembros/NAN.jpg" class="img__slider">
                     </figure>
                 </section>
+
+                <section class="slider__body" data-id="5">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Ana Eugenia Forero.</h2>
+                        <p> Es una destacada comunicadora y periodista que ha sido nombrada como Vocal de la SMP. Con una amplia experiencia en medios de comunicación y una pasión por la información veraz y relevante, su incorporación a la SMP será un activo invaluable para la organización. Desempeñará un papel fundamental en la promoción de la visión y misión de la sociedad. Su habilidad para comunicar de manera efectiva será esencial para difundir los proyectos y acciones que la SMP promueve en beneficio de la comunidad.
+                        </p>
+                    </div>
+                    <figure class="figure__slider">
+                        <img src="img/miembros/NAN.jpg" class="img__slider">
+                    </figure>
+                </section>
+
+
                 <img src="assets/right.svg" class="slider-arrow" id="next">
             </div>
 
@@ -273,6 +289,9 @@
                 </div>
             </div>
         </footer>
+        <a href="#" class="to__top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
         <script src="js/slider.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
