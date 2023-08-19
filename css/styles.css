@@ -12,8 +12,9 @@ body {
     font-family: 'Lora';
     width: 100%;
     overflow-x: hidden;
-    background-color: #F0f0f0;
+    background-color: #FFFFFF;
 }
+
 
 /* **************************** HEADERS ***********************/
 .header{
@@ -25,7 +26,7 @@ body {
     margin: 0 auto;
 }
 .header--index {
-    background-image: linear-gradient(to right, #492b3e8f, #b6452c81), url(../img/photo/todos-color.jpg);
+    background-image: linear-gradient(#b6452c7a, #b6452c25), url(../img/photo/todos-color.jpg);
     background-size: cover;
 }
 
@@ -37,14 +38,14 @@ body {
 }
 
 .header--galeria {
-    background-image: linear-gradient(to right, #8f530e8a, #984eaf8f), url(../img/fusa3.jpg);
+    background-image:linear-gradient(#0c3072c7, #0c307200), url(../img/lugares/casona-balmoral.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .header--contacto {
-    background-image: linear-gradient(to right, #32632ea6, #198b8b8f), url(../img/fusa2.jpg);
+    background-image:linear-gradient( #26616181, #11632675), url(../img/lugares/centro02.png);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -56,7 +57,7 @@ body {
     max-width: 75rem;
     height: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Overpass';
     margin: 0 auto;
 }
@@ -97,8 +98,8 @@ body {
     .ul-lista a{
         padding: 2.5rem 1.25rem 1.75rem 1.25rem;
         color:#FFFFFF;
-        font-size: 1.25rem;
-        font-weight: 650;
+        font-size: 1.2rem;
+        font-weight: 400;
         text-decoration: none;
         transition:all .3s ease;
         -webkit-transition:all .3s ease;
@@ -114,9 +115,10 @@ body {
 
 .icons-social__nav{
     display: inline-flex;
+    gap: .5rem;
 }
-    .icons-social__nav .icon{
-        margin: 0 20px;
+    .icons-social__nav .icon a{
+        margin: 0;
         color: #FFFFFF;
         text-align: center;
         cursor: pointer;
@@ -161,6 +163,70 @@ body {
 .icono{
     display: none;
 }
+.li__nosotros{
+    cursor: pointer;;
+}
+.li__nosotros i{
+    font-size: 1rem;
+}
+
+.div__nosotros-menu{
+    background: #fff;
+    display: none;
+    width: 15rem;
+    height: 0;
+    padding: 0;
+    right: 25.5rem;
+    z-index: 10;
+    width: 15rem;
+    position: absolute;
+    top: 5rem;
+    right: 21.65rem;
+}
+.li__nosotros .ul__nosotros-menu{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex; 
+    gap: .3rem;
+}
+.li__nosotros .nosotros-menu--li{
+    display: flex;
+    color: #0000007c;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 1rem 1rem;
+    top: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.nosotros-menu--li .nosotros-menu--a{
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    color:#0000007c;
+    font-size: 1rem;
+    font-weight: 400;
+    transition:all .3s ease;
+}
+.nosotros-menu--li .nosotros-menu--a:hover{
+    border-bottom:  none;
+    padding-bottom: 0;
+}
+.nosotros-menu--li:hover{
+    background: #ddc5a244;
+}
+
+.mouseover{
+    display: flex;
+    height: max-content;
+}
 /* -------------------------------- header ----------------------------------*/
 .textos-header{
     display: flex;
@@ -182,11 +248,11 @@ body {
         max-width: 75rem;
         height: auto;
         font-size: 3rem;
-        color: #f0f0f0;
+        color: #FFFFFF;
     }
     .textos-header__h1--index{
-        text-align: left;
-        font-size: 2.8rem;
+        text-align: start;
+        font-size: 2.5rem;
     }
 
 .div__button{
@@ -194,9 +260,10 @@ body {
     width: 100%;
     height: auto;
     justify-content: start;
+    display: inline-flex;
 }
     .div__button a{ text-decoration: none;}
-    .button-know p{color: #f0f0f0; font-size: 1.6em; font-family: 'overpass';}
+    .button-know p{color: #ffffff; font-size: 1.6em; font-family: 'overpass';}
     .know-assets{
         filter: brightness(0) invert(1);
         -webkit-filter: brightness(0) invert(1);
@@ -262,42 +329,46 @@ body {
 }
 .wave path{
     stroke: none; 
-    fill: #F0f0f0;
+    fill: #FFFFFF;
 }
 
 /* ----------------------TO__TOP BTN------------------------*/
 .to__top{
-    background: #E77C24;
+    display: grid;
+    place-items: center;
+    background: #c49227;
+    border-bottom: #c49227;
+    border-radius: 20%;
     position: fixed;
-    bottom: .5rem;
+    bottom: 0;
     right: 2rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 5%;
-    display: flex;
-    font-size: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
     color: #FFFFFF;
     text-decoration: none;
     opacity: 0;
     pointer-events: none;
-    display: flex;
     transition: all .6s ease;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
     -ms-transition: all .6s ease;
     -o-transition: all .6s ease;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
 }
 .to__top.active{
     bottom: 2rem;
+    text-decoration: none;
     pointer-events: auto;
     opacity: 1;
     z-index: 10;
 }
 .to__top:hover{
+    background: #52a07b;
+    text-decoration: none;
     transform: translateY(-.5rem);
     -webkit-transform: translateY(-.5rem);
     -moz-transform: translateY(-.5rem);
@@ -306,6 +377,9 @@ body {
 }
     .to__top i{
         margin: auto;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding-top: 3px;
     }
 
 /* ...................................VIDEO__INDEX..............................*/
@@ -356,7 +430,7 @@ body {
         font-size: 1em;
         font-weight: 400;
         line-height: 2em;
-        text-align: center;
+        text-align: justify;
         color: #523634;
     }
     .div__infovideo--down p{
@@ -404,31 +478,54 @@ body {
         text-align: center;
         color: #523634;
     }
+    .div__video--presentacion{
+        height: auto;
+        width: 100%;
+        margin: 2rem 0;
+    }
         .div__video .iframe__video--presentacion{
-            height: 100%;
+            height: 38rem;
             width: 100%;
         }
     
     .div__myv {
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 4rem;
+        flex-flow: column nowrap;
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
     }
     .div__mision,
-    .div__vision {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .div__vision{
+        display: flex;
+        gap: 1rem;
+    }
+    .div__mision >.div__myv--textos,
+    .div__vision >.div__myv--textos{
+        width: 50%;
+    }
+    .div__mision > img,
+    .div__vision > img{
+        width: 50%;
+    }
+    .div__myv--textos{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: .5rem;
+        padding: 1rem 2rem;
+    }
+    .decorador__separador--myv{
+        margin: 0 auto 1rem;
+        height: .5rem;
     }
 
 /*----------------------------------------- slider-nosotros -------------------------------------------- */
 
 .section__slider{
-    background-color: #F5EFC4;
-    padding: 40px 0;
+    padding: 2.5rem 0;
+    max-width: 75rem;
+    margin: 0 auto;
 }
 
 .div__slider{
@@ -481,18 +578,33 @@ body {
         margin-bottom: 1.5rem;
     }
 
-.img__slider{
-    width: 15rem;
-    height: 15rem;
-    border: 1.5px solid #523634;
-    border-radius: 1rem;
-    object-fit: cover;
-    margin: auto;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    .imagen__socio{
+        border-radius: 5%;
+        width: 15rem;
+        height: 15rem;
+        background-image: url(/img/photo/01.jpg);
+        background-size: cover;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
 }
+    .socio--2{
+        background-image: url(/img/photo/02.jpg);
+        background-size: cover;
+    }
+    .socio--3{
+        background-image: url(/img/photo/03.jpg);
+        background-size: cover;
+    }
+    .socio--4{
+        background-image: url();
+        background-size: cover;
+    }
+    .socio--5{
+        background-image: url();
+        background-size: cover;
+    }
 
 .slider-arrow{
     cursor: pointer;
@@ -626,7 +738,9 @@ body {
 
 /*---------------------------------------------------- FOOTER----------------------------------*/
 .footer{
-    background-color:#301B28;
+    background-image: linear-gradient(#2c2a29, #2c2a29d3), url(/img/lugares/centro01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Overpass';
     display: grid;
     grid-template-rows: 3 auto;
@@ -637,13 +751,13 @@ body {
 }
 .grupo-1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: justify;
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
     height: auto;
-    padding: 1.9rem 0 1.9rem 0;
+    padding: 2.5rem 0 5rem 0;
     position: relative;
 }
 .grupo-1::after {
@@ -651,13 +765,17 @@ body {
     position: absolute;
     bottom: -1px;
     width: 100vw;
-    height: .5px;
-    background-color: #DDC5A2; /* Color del borde */
+    height: 1px;
+    background-color: #ffffff5d; /* Color del borde */
 }
     .box-1{
         display: flex;
         width: 250px;
         height: 230px;
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+        top: 1rem;
     }
     .box-1 .footer__logo{
         width: 100%;
@@ -672,12 +790,14 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        justify-content: baseline;
+        justify-content: center;
     }
 
     .box-2 h2{
         color: #fff;
         padding-bottom: 2rem;
+        font-family: 'Lora';
+        font-size: 2rem;
     }
     .box-2 .know{
         display: flex;
@@ -697,18 +817,22 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        justify-content: baseline;
         text-decoration: none;
+        position: absolute;
+        right: 0;
+        top: 2.3rem;
     }
     .box-3 h2{
         color: #fff;
-        padding-bottom: 2rem;
+        padding: .11rem 0 2rem 0;
+        font-family: 'Lora';
+        font-size: 2rem;
     }
     .box-3 .items{
         display:flex;
         flex-direction: column;
         color: #fff;
-        gap: .8rem;
+        gap: 1rem;
         text-decoration: none;
     }
     .items a{
@@ -726,27 +850,48 @@ body {
         color: #DDC5A2;
     }
 
-    .icons-social-footer{
-        display: flex;
-    }
+            .icons-social-footer.black i{
+                display: inline-flex;
+                gap: .5rem;
+            }
+            .icons-social-footer.black a{
+                border: 1px solid #000000;
+            }
+            .icons-social-footer.black a:hover {
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 900;
+            }
+
     .icons-social-footer i{
         display: inline-flex;
-        gap: 2rem;
+        gap: .5rem;
     }
 
     .icons-social-footer a{
         display: inline-flex;
         justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
         color:#fff;
         text-decoration: none;
-    }
+        border: 1px solid #ffffff5d;
+        width: 2.5rem;
+        height: 2.5rem;
+}
     .icons-social-footer a:hover{
-        color: #DDC5A2;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 900;
     }
+    .fb:hover{background: #3b5998;}
+    .in:hover{background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+    .tw:hover{background: #00acee;}
+    .yt:hover{background: #c4302b;}
 
 .grupo-2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     max-width: 75rem;
     margin: 0 auto;
@@ -759,13 +904,21 @@ body {
     position: absolute;
     bottom: -1px;
     width: 100vw;
-    height: .5px;
-    background-color: #DDC5A2;
+    height: 1px;
+    background-color: #ffffff5d;
 }
     .logo-g2{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .logo-g2--1{
+        position: absolute;
+        left: 0;
+    }
+    .logo-g2--3{
+        position: absolute;
+        right: 0;
     }
     .logo-g2 img{
         display: inline-block;
@@ -776,7 +929,7 @@ body {
 
 .grupo-3{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     padding: 1.25rem 0 1.25rem 0;
     color: #fff;
@@ -785,18 +938,14 @@ body {
     margin: 0 auto;
 }
     .grupo-3 small{
-        font-size: 14px;
+        font-size: .9rem;
     }
     .design{
         display: flex;
-        justify-content: center;
     }
     .design a{
         text-decoration: none;
         justify-content: center;
-        font-size: 12px;
-        color: #9e9797;
-        font-family: 'Overpass';
     }
     .design a small{
         transition: .1s ease;
@@ -809,100 +958,85 @@ body {
 /* ------------------------------formulario -----------------------------------------*/
 .contact{
     font-family: 'Overpass';
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 55% 45%;
-    padding: 2em 3em 5em;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    gap: 1.5rem;
 }
 .contact-info{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding-right: 3rem;
 }
     .contact-info h2{
-        text-align: justify;
+        font-family: 'Lora';
+        text-align: start;
         font-size: 2em;
         font-weight: 600;
+        color: #B6452C;
     }
     .contact-info p{
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
     }
     .box-contact-info{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
     }
     .box-contact-info .items-contact{
         display:flex;
         flex-direction: column;
-        gap: .8rem;
+        gap: 1.5rem;
+    }
+    .items-contact ul{
+        display: flex;
     }
     .box-contact-info .items-contact a{
         text-decoration: none;
         color:#000000;
     }
     .box-contact-info .items-contact li{
-        list-style: none;
-        font-weight: 300;
+        display: flex;
+        gap: 1rem;
+        font-weight: 400;
         cursor: pointer;
-        transition: .2s ease;
-        -webkit-transition: .2s ease;
-        -moz-transition: .2s ease;
-        -ms-transition: .2s ease;
-        -o-transition: .2s ease;
 }
     .box-contact-info .items-contact li:hover{
-        font-weight: 600;
+        color: #B6452C;
     }
 
 .icons-social-contact{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
     .icons-social-contact h3{
         font-size: 1em;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-    }
-    .icons-social-contact i{
-        display: flex;
-        gap: 1em;
     }
     .icons-social-contact a{
         display: inline-flex;
         justify-content: center;
         color:#000000;
         font-weight: 400;
-        transition: .3s ease;
-        -webkit-transition: .3s ease;
-        -moz-transition: .3s ease;
-        -ms-transition: .3s ease;
-        -o-transition: .3s ease;
-}
-    .icons-social-contact a:hover{
-        transform: scale(1.4);
-        -webkit-transform: scale(1.4);
-        -moz-transform: scale(1.4);
-        -ms-transform: scale(1.4);
-        -o-transform: scale(1.4);
 }
    /*///////////////////////////////////////////// */
 .form{
-    background-image: linear-gradient(120deg, #1ef37e2a 0%, #1cebd644 100%);
+    background-image: linear-gradient(to right, #f4a36123, #e9c56a75);
     font-family: 'Overpass';
     width: 100%;
     max-width: 100%;
-    /* border-radius: 1em; */
-    /* -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em; */
-    padding: 3.5em 1.5em;
+    padding: 2rem;
     margin: auto;
-    /* box-shadow: #0c8579 8px 8px 10px; */
 }
     .form-container{
         width: 100%;
@@ -910,21 +1044,17 @@ body {
         gap: 1em;
         grid-auto-columns: 100%;
     }
-    .form-title{
-        text-align: center;
-        font-size: 1.9rem;
-        margin-bottom: .4em;
-        color: #094e47;
-    }
     .form-container label{
         font-family: 'Overpass';
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 350;
+        color: #B6452C;
     }
     .form-input{
         font-family: 'Overpass';
         font-size: 1rem;
-        padding: .8em .8em;
+        font-weight: 300;
+        padding: .8rem;
         outline: none;
         border: none;
         border: 1px solid #17C3B2;
@@ -936,21 +1066,21 @@ body {
     }
     .form-input--message{
         resize: vertical;
-        padding: 1em 1em 4em;
+        padding: 1rem 1rem 4rem;
         margin-bottom: .5em;
     }
 .button-send{
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 /*** ESTILOS BOTÓN GROW SKEW ***/
 .s-button{
-    font-family: 'Overpass';
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1em;
     width: 100%;
-    background: #1df5a2;
-    border: 1px solid #17C3B2;
+    background: #C49227;
+    border: 1px solid #52A07B;
     padding: 16px 20px;
     border-radius: 0.2em;
     position: relative;
@@ -975,7 +1105,7 @@ body {
     }
     .s-button::after {
         content: "";
-        background: #17c3b2d3;
+        background: #52A07B;
         position: absolute;
         z-index: -1;
         padding: 16px 20px;
