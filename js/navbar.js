@@ -1,16 +1,16 @@
-// NAVBAR-STATIC //
-window.addEventListener("scroll", function() {
-    let navbar = document.querySelector(".navbar-section")
-    navbar.classList.toggle("down", window.scrollY > 0)
+// // NAVBAR-STATIC //
+// window.addEventListener("scroll", function() {
+//     let navbar = document.querySelector(".navbar-section")
+//     navbar.classList.toggle("down", window.scrollY > 0)
 
-    if (window.scrollY > 0) {
-        navbar.style.background = "#301B28"
-        navbar.classList.add("transition")
-    } else {
-        navbar.style.background = "transparent"
-        navbar.classList.remove("transition")
-    }
-});
+//     if (window.scrollY > 0) {
+//         navbar.style.background = "#301B28"
+//         navbar.classList.add("transition")
+//     } else {
+//         navbar.style.background = "transparent"
+//         navbar.classList.remove("transition")
+//     }
+// });
 
 //BTN TOTOP //
 const toTop = document.querySelector(".to__top");

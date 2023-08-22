@@ -7,16 +7,19 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sociedad de Mejoras Públicas de Fusagasugá</title>
-        <link rel="shortcut icon" href="img/LOGO-SMPF.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo/new-logo-icon-white.webp" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/media.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <script src="https://kit.fontawesome.com/c11c0393e3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header-us">
+        <header class="header header--nosotros">
             <section class="navbar-section">
                 <div class="navbar__logo">
                     <figure>
@@ -39,8 +42,23 @@
                             <li>
                                 <a href="index.html">Inicio</a>
                             </li>
-                            <li>
-                                <a class="active" href="nosotros.html">Nosotros</a>
+                            <li id="nosotros" class="li__nosotros">
+                                <a class="active">Nosotros
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="div__nosotros-menu" id="menu-nosotros">
+                                    <ul class="ul__nosotros-menu" id="ul-nosotros">
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#historia">Nuestra Historia</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#socios">Socios SMP</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a href="galeria.html">Galería</a>
@@ -52,19 +70,32 @@
                     </div>
                     <div class="icons-social__nav" id="icons-social-nav">
                         <div class="icon facebook">
-                            <span>
-                                <i class="fab fa-facebook-f"></i>
-                            </span>
+                            <a href="https://www.facebook.com/profile.php?id=100095466946084" target="_blank">
+                                <span>
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon instagram">
-                            <span>
-                                <i class="fab fa-instagram"></i>
-                            </span>
+                            <a href="https://www.instagram.com/smpfusagasuga/" target="_blank">
+                                <span>
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon twiter">
-                            <span>
-                                <i class="fab fa-twitter"></i>
-                            </span>
+                            <a href="https://twitter.com/mejoras_de25478" target="_blank">
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="icon youtube">
+                            <a href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ" target="_blank">
+                                <span>
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -73,13 +104,7 @@
                 <div class="textos-header__h1">
                     <h1>¿Quienes Somos?</h1>
                 </div>
-                <div class="hidden-text">
-                    <h3>¿Quienes Somos?</h3>
-                </div>
             </section>
-            <a href="#" class="to__top">
-                <i class="fa fa-chevron-up"></i>
-            </a>
               <!-- wave -->
         <div class="wave">
             <svg viewBox="0 0 400 150" preserveAspectRatio="none">
@@ -87,93 +112,162 @@
             </svg>
         </div>
         </header>
-        <main>
-            <section class="nosotros" id="nosotros">
-                <h2 class="titulo">Sociedad de Mejoras Públicas de Fusagasugá</h2>
-                <div class="descripcion">
-                    <p>Somos una organización sin ánimo de lucro, de carácter cívico y privado,
+        <main id="main-nosotros">
+            <section class="section__nosotros" id="nosotros">
+                <h2 class="nosotros__titulo">Sociedad de Mejoras Públicas de Fusagasugá</h2>
+                <div class="decorador__separador"></div>
+                <div class="div__descripcion">
+                    <p class="nosotros__descripcion">Somos una organización sin ánimo de lucro, de carácter cívico y privado,
                         dedicada al progreso y bienestar de nuestra comunidad. Trabajamos en
                         colaboración con entidades públicas y privadas para impulsar proyectos y
                         acciones que promuevan el desarrollo sostenible de Fusagasugá.
-                        <br><br>
+                        <br>
                         Participamos activamente en la construcción del futuro de Fusagasugá, su región
                         y el país. Nos enorgullece ser parte activa de la transformación de la ciudad,
                         construyendo un futuro mejor para todos.
                     </p>
                 </div>
-                <div class="us-container">
-                    <img src="img/ilustracion2.svg">
-                    <div class="mv-text">
-                        <h3>
-                            <span>
-                                <p>1</p>
-                            </span>Misión</h3>
-                        <p>Nuestra misión es trabajar de manera incansable para promover el desarrollo
-                            integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser
-                            agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación,
-                            la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos
-                            fomentar la participación ciudadana, la gestión responsable de los recursos y la
-                            preservación de nuestro patrimonio, con el objetivo de construir una ciudad
-                            inclusiva, equitativa y próspera.</p>
-                        <h3>
-                            <span>
-                                <p>2</p>
-                            </span>Visión</h3>
-                        <p>
-                            Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
-                            mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como
-                            referentes en la promoción de la participación ciudadana, la protección del
-                            entorno natural y la generación de espacios de convivencia y desarrollo
-                            comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su
-                            cultura, su cuidado del medio ambiente y su espíritu de solidaridad,
-                            contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus
-                            habitantes.</p>
+                <div class="div__video div__video--presentacion"> 
+                    <div id="player-nosotros">
+                        <!-- videoNosotros - API -->
                     </div>
                 </div>
             </section>
+            <div class="section__myv">
+                <div class="div__myv">
+                        <div class="div__mision">
+                            <div class="div__myv--textos">
+                                <h2 class="nosotros__titulo titulo--myv">Misión</h2>
+                                <div class="decorador__separador decorador__separador--myv"></div>
+                                <p class="nosotros__descripcion desc--myv">Nuestra misión es trabajar de manera incansable para promover el desarrollo
+                                    integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser
+                                    agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación,
+                                    la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos
+                                    fomentar la participación ciudadana, la gestión responsable de los recursos y la
+                                    preservación de nuestro patrimonio, con el objetivo de construir una ciudad
+                                    inclusiva, equitativa y próspera.</p>
+                            </div>
+                        </div>
+                        <div class="div__vision">
+                            <div class="div__myv--textos">
+                                <h2 class="nosotros__titulo titulo--myv">Visión</h2>
+                                <div class="decorador__separador decorador__separador--myv"></div>
+                                <p class="nosotros__descripcion desc--myv"> Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
+                                    mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como
+                                    referentes en la promoción de la participación ciudadana, la protección del
+                                    entorno natural y la generación de espacios de convivencia y desarrollo
+                                    comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su
+                                    cultura, su cuidado del medio ambiente y su espíritu de solidaridad,
+                                    contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus
+                                    habitantes.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </main>
-        <section class="slider">
-            <div class="slider-container">
+        <section class="section__slider" id="socios">
+            <div class="div__socios"> 
+                <h1 class="titulo__socios">Junta Directiva de la Sociedad de Mejoras Públicas de Fusagasugá</h1>
+                <div class="decorador__separador ds--socios"></div>
+            </div>
+            <div class="div__slider">
                 <img src="assets/left.svg" class="slider-arrow" id="before">
-                <section class="slider-body slider-body-show" data-id="1">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">NAME</h2>
-                        <p class="slider-review">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit ea placeat
-                            nesciunt perferendis a.
+
+                <section class="slider__body slider__body--show" data-id="1">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Dr. Agustín Gómez Sarmiento.</h2>
+                        <h3 class="sub-subtitle">Presidente</h3>
+                        <p class="sub-p">Presidente fundador de la Sociedad de Mejoras Públicas de Fusagasugá, es un destacado abogado, consultor y litigante con una amplia trayectoria en el campo del derecho.
                         </p>
                     </div>
-                    <figure class="slider_picture">
-                        <img src="img/slider1.jpg" class="slider-img">
-                    </figure>
+                    <div class="imagen__socio"></div>
                 </section>
-                <section class="slider-body" data-id="2">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">!Hola! Mi nombre es Pepita Perez</h2>
-                        <p class="slider-review">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, qui odio
-                            laboriosam dicta quod alias? Quo recusandae dolorem laborum!
+
+                <section class="slider__body" data-id="2">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Dra. Ángela Caicedo.</h2>
+                        <h3 class="sub-subtitle">Vicepresidenta</h3>
+                        <p class="sub-p">Destacada abogada con una amplia experiencia en cooperación internacional y políticas públicas para el desarrollo. Su profundo compromiso con el progreso social y el bienestar colectivo la ha llevado a sobresalir en el campo del derecho y a ser un referente en la promoción del desarrollo sostenible.
                         </p>
                     </div>
-                    <figure class="slider_picture">
-                        <img src="img/slider2.jpg" class="slider-img">
-                    </figure>
+                    <div class="imagen__socio socio--2"></div>
                 </section>
-                <section class="slider-body" data-id="3">
-                    <div class="slider-textos">
-                        <h2 class="subtitle">!Hola! Mi nombre es Pablo Gutierrez</h2>
-                        <p class="slider-review">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum incidunt at
-                            porro alias.
+
+                <section class="slider__body" data-id="3">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Lilian Johanna Melo Sarria.</h2>
+                        <h3 class="sub-subtitle">Secretaria</h3>
+                        <p class="sub-p">Talentosa y proactiva profesional que desempeña un rol fundamental como secretaria de la Sociedad de Mejoras Públicas de Fusagasugá. Como secretaria de la SMP, es responsable de coordinar y organizar todas las actividades administrativas y operativas.
                         </p>
                     </div>
-                    <figure class="slider_picture">
-                        <img src="img/slider3.jpg" class="slider-img">
-                    </figure>
+                    <div class="imagen__socio socio--3"></div>
+                </section>
+
+                <section class="slider__body" data-id="4">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Carlota Méndez</h2>
+                        <h3 class="sub-subtitle">Tesorera</h3>
+                        <p class="sub-p">Arquitecta talentosa y comprometida con un rol vital como encargada de la tesorería de la SMP. Como responsable de la tesorería, es la encargada de administrar los recursos financieros de la SMP con prudencia y transparencia.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--4"></div>
+                </section>
+                <section class="slider__body" data-id="5">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Ana Eugenia Forero.</h2>
+                        <h3 class="sub-subtitle">Vocal</h3>
+                        <p class="sub-p">Comunicadora y periodista destacada, con una amplia experiencia en medios de comunicación y una pasión por la información veraz y relevante, su incorporación será un activo invaluable para la SMP.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--5"></div>
+                </section>
+                <section class="slider__body" data-id="6">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--6"></div>
+                </section>
+                <section class="slider__body" data-id="7">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--7"></div>
+                </section>
+                <section class="slider__body" data-id="8">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--8"></div>
+                </section>
+                <section class="slider__body" data-id="9">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--9"></div>
+                </section>
+                <section class="slider__body" data-id="10">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--10"></div>
                 </section>
                 <img src="assets/right.svg" class="slider-arrow" id="next">
             </div>
-
         </section>
         <footer class="footer">
             <div class="grupo-1">
@@ -223,27 +317,27 @@
                     <div class="icons-social-footer">
                         <i>
                             <a
-                                href="https://www.facebook.com/alcaldiafusagasugaoficial"
-                                class="fa fa-facebook"
+                                href="https://www.facebook.com/profile.php?id=100095466946084"
+                                class="fa fa-facebook fb"
                                 target="_blank"></a>
                             <a
-                                href="https://www.instagram.com/alcaldiafusagasugaoficial/"
-                                class="fa fa-instagram"
+                                href="https://www.instagram.com/smpfusagasuga/"
+                                class="fa fa-instagram in"
                                 target="_blank"></a>
                             <a
-                                href="https://twitter.com/AlcFusagasuga"
-                                class="fa fa-twitter"
+                                href="https://twitter.com/mejoras_de25478"
+                                class="fa fa-twitter tw"
                                 target="_blank"></a>
                             <a
-                                href="https://www.linkedin.com/company/alcald%C3%ADa-municipal-de-fusagasug%C3%A1/"
-                                class="fa fa-linkedin"
+                                href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ"
+                                class="fa fa-youtube yt"
                                 target="_blank"></a>
                         </i>
                     </div>
                 </div>
             </div>
             <div class="grupo-2">
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--1">
                     <a href="https://federacionsmpc.org/" target="_blank">
                         <img src="img/FSMP.png" alt="Logo smp-fusagasuga">
                     </a>
@@ -253,7 +347,7 @@
                         <img src="img/GOVLOGO.png" alt="Logo smp-fusagasuga">
                     </a>
                 </figure>
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--3">
                     <a href="https://alcaldiafusagasuga.gov.co/" target="_blank">
                         <img src="img/ALCALDIAFUSABLANCO.webp" alt="Logo smp-fusagasuga">
                     </a>
@@ -273,8 +367,13 @@
                 </div>
             </div>
         </footer>
+        <a href="#" class="to__top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
         <script src="js/slider.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
+        <script src="js/mouseover.js"></script>
+        <script src="js/youtube.api.js"></script>
     </body>
 </html>

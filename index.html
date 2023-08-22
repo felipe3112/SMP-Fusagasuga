@@ -19,7 +19,7 @@
         <script src="https://kit.fontawesome.com/c11c0393e3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header-index">
+        <header class="header header--index">
             <!-- ****************************** NAVBAR ***********************-->
             <section class="navbar-section">
                 <div class="navbar__logo">
@@ -43,8 +43,23 @@
                             <li>
                                 <a class="active" href="index.html">Inicio</a>
                             </li>
-                            <li>
-                                <a href="nosotros.html">Nosotros</a>
+                            <li id="nosotros" class="li__nosotros">
+                                <a>Nosotros
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="div__nosotros-menu" id="menu-nosotros">
+                                    <ul class="ul__nosotros-menu" id="ul-nosotros">
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#historia">Nuestra Historia</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#socios">Socios SMP</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a href="galeria.html">Galería</a>
@@ -56,33 +71,47 @@
                     </div>
                     <div class="icons-social__nav" id="icons-social-nav">
                         <div class="icon facebook">
-                            <span>
-                                <i class="fab fa-facebook-f"></i>
-                            </span>
+                            <a href="https://www.facebook.com/profile.php?id=100095466946084" target="_blank">
+                                <span>
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon instagram">
-                            <span>
-                                <i class="fab fa-instagram"></i>
-                            </span>
+                            <a href="https://www.instagram.com/smpfusagasuga/" target="_blank">
+                                <span>
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon twiter">
-                            <span>
-                                <i class="fab fa-twitter"></i>
-                            </span>
+                            <a href="https://twitter.com/mejoras_de25478" target="_blank">
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="icon youtube">
+                            <a href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ" target="_blank">
+                                <span>
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </nav>
             </section>
+            
             <!-- ******************************** TEXTOS DEL HEADER***************************** -->
-            <section class="textos-header">
-                <div class="textos-header__h1">
+            <section class="textos-header textos-header--index">
+                <div class="textos-header__h1 textos-header__h1--index">
                     <h1>Sociedad de Mejoras Públicas de Fusagasugá</h1>
                 </div>
-                <div class="button-main">
-                    <a href="nosotros.html#nosotros">
+                <div class="div__button">
+                    <a href="nosotros.html#main-nosotros">
                         <button class="button-know">
                             <p>Conócenos</p>
-                            <img src="assets/right.svg" class="slider-button" id="before">
+                            <img src="assets/right.svg" class="know-assets" id="before">
                         </button>
                     </a>
                 </div>
@@ -96,8 +125,29 @@
         </header>
         <!-- ********************* CONTENIDO DEL INDEX ****************** -->
         <main>
-            <section></section>
+            <section class="section__video">
+                <div class="divsection__video">
+                    <div class="div__video div__video--index">
+                        <div id="player-index">
+                            <!-- videoIndex -->
+                        </div>
+                    </div>
+                    <div class="div__infovideo--index">
+                        <h2 class="h2__infovideo">Nueva SMP de Fusagasugá: ¡Construyendo Juntos un Futuro Mejor!"</h2>
+                        <div class="decorador__separador"></div>
+                        <p>Avanzando por el camino natural para la creación de una nueva Sociedad, se ha constituido la Sociedad de Mejoras Públicas de Fusagasugá, proceso que iniciamos el 22 de noviembre de 2022 con el acompañamiento directo, en cada una de sus etapas, de la Presidencia de la Federación. </p>
+                    </div>
+                </div>
+                <div class="div__infovideo--down">
+                    <p>Su presidente fundador es el abogado, consultor y litigante, Dr.  Agustín Gómez Sarmiento. Como Vicepresidente: fue elegida la abogada, experta en cooperación internacional y políticas públicas para el desarrollo, Dra. Ángela Caicedo. En la Secretaría, se eligió a la empresaria Sra. Lilian Johanna Melo Sarria; en la Tesorería, a la arquitecta Carlota Méndez y como Vocal la comunicadora y periodista, Sra. Ana Eugenia Forero.</p>
+                </div>
+            </section>
         </main>
+        <section class="section__cards">
+            <div class="div__card"></div>
+            <div class="div__card"></div>
+            <div class="div__card"></div>
+        </section>
         <!-- ********************** F O O T E R ************************* -->
         <footer class="footer">
             <div class="grupo-1">
@@ -147,27 +197,27 @@
                     <div class="icons-social-footer">
                         <i>
                             <a
-                                href="https://www.facebook.com/alcaldiafusagasugaoficial"
-                                class="fa fa-facebook"
+                                href="https://www.facebook.com/profile.php?id=100095466946084"
+                                class="fa fa-facebook fb"
                                 target="_blank"></a>
                             <a
-                                href="https://www.instagram.com/alcaldiafusagasugaoficial/"
-                                class="fa fa-instagram"
+                                href="https://www.instagram.com/smpfusagasuga/"
+                                class="fa fa-instagram in"
                                 target="_blank"></a>
                             <a
-                                href="https://twitter.com/AlcFusagasuga"
-                                class="fa fa-twitter"
+                                href="https://twitter.com/mejoras_de25478"
+                                class="fa fa-twitter tw"
                                 target="_blank"></a>
                             <a
-                                href="https://www.linkedin.com/company/alcald%C3%ADa-municipal-de-fusagasug%C3%A1/"
-                                class="fa fa-linkedin"
+                                href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ"
+                                class="fa fa-youtube yt"
                                 target="_blank"></a>
                         </i>
                     </div>
                 </div>
             </div>
             <div class="grupo-2">
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--1">
                     <a href="https://federacionsmpc.org/" target="_blank">
                         <img src="img/FSMP.png" alt="Logo smp-fusagasuga">
                     </a>
@@ -177,7 +227,7 @@
                         <img src="img/GOVLOGO.png" alt="Logo smp-fusagasuga">
                     </a>
                 </figure>
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--3">
                     <a href="https://alcaldiafusagasuga.gov.co/" target="_blank">
                         <img src="img/ALCALDIAFUSABLANCO.webp" alt="Logo smp-fusagasuga">
                     </a>
@@ -203,5 +253,7 @@
         </a>
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
+        <script src="js/mouseover.js"></script>
+        <script src="js/youtube.api.js"></script>
     </body>
 </html>

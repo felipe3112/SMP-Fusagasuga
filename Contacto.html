@@ -7,17 +7,19 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sociedad de Mejoras Públicas de Fusagasugá</title>
-        <link rel="shortcut icon" href="img/LOGO-SMPF.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo/new-logo-icon-white.webp" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/media.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <script src="https://kit.fontawesome.com/c11c0393e3.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <header class="header-contact">
+        <header class="header header--contacto">
             <section class="navbar-section">
                 <div class="navbar__logo">
                     <figure>
@@ -40,8 +42,23 @@
                             <li>
                                 <a href="index.html">Inicio</a>
                             </li>
-                            <li>
-                                <a href="nosotros.html">Nosotros</a>
+                            <li id="nosotros" class="li__nosotros">
+                                <a>Nosotros
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="div__nosotros-menu" id="menu-nosotros">
+                                    <ul class="ul__nosotros-menu" id="ul-nosotros">
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#historia">Nuestra Historia</a>
+                                        </li>
+                                        <li class="nosotros-menu--li">
+                                            <a class="nosotros-menu--a" href="nosotros.html#socios">Socios SMP</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a href="galeria.html">Galería</a>
@@ -53,19 +70,32 @@
                     </div>
                     <div class="icons-social__nav" id="icons-social-nav">
                         <div class="icon facebook">
-                            <span>
-                                <i class="fab fa-facebook-f"></i>
-                            </span>
+                            <a href="https://www.facebook.com/profile.php?id=100095466946084" target="_blank">
+                                <span>
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon instagram">
-                            <span>
-                                <i class="fab fa-instagram"></i>
-                            </span>
+                            <a href="https://www.instagram.com/smpfusagasuga/" target="_blank">
+                                <span>
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="icon twiter">
-                            <span>
-                                <i class="fab fa-twitter"></i>
-                            </span>
+                            <a href="https://twitter.com/mejoras_de25478" target="_blank">
+                                <span>
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="icon youtube">
+                            <a href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ" target="_blank">
+                                <span>
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -73,9 +103,6 @@
             <section class="textos-header contactanos">
                 <div class="textos-header__h1">
                     <h1>Contáctenos</h1>
-                </div>
-                <div class="hidden-text">
-                    <h3>Contáctenos</h3>
                 </div>
             </section>
             <!-- boton-to__top -->
@@ -91,11 +118,8 @@
         </header>
         <section class="contact">
             <div class="contact-info">
-                <h2>Sociedad de Mejoras Públicas
-                    <br>
-                    de Fusagasugá</h2>
-                <p>Envíenos su comentario, duda, sugerencia o inquietud y en breves momentos le
-                    contestaremos:</p>
+                <h2>En la Sociedad de Mejoras Públicas de Fusagasugá estamos atentos a ayudarle con sus inquietudes.</h2>
+                <p>Comuníquese con nosotros por medio de los siguientes datos  o puede usar el formulario para escribirnos un mensaje y nos comunicaremos con usted a la mayor brevedad posible.</p>
                 <div class="box-contact-info">
                     <div class="items-contact">
                         <ul>
@@ -113,44 +137,47 @@
                         <ul>
                             <a href="#" target="_blank">
                                 <li>
-                                    <i class="fa fa-envelope"></i>info@smp-fusagasuga.org</li>
+                                    <i class="fa fa-envelope"></i>info@smpfusagasuga.org</li>
                             </a>
                         </ul>
                     </div>
                     <div class="icons-social-contact">
-                        <h3>También puede encontrar información de interés en nuestras redes sociales:</h3>
-                        <i>
-                            <a
-                                href="https://www.facebook.com/alcaldiafusagasugaoficial"
-                                class="fa fa-facebook"
-                                target="_blank"></a>
-                            <a
-                                href="https://www.instagram.com/alcaldiafusagasugaoficial/"
-                                class="fa fa-instagram"
-                                target="_blank"></a>
-                            <a
-                                href="https://twitter.com/AlcFusagasuga"
-                                class="fa fa-twitter"
-                                target="_blank"></a>
-                            <a
-                                href="https://www.linkedin.com/company/alcald%C3%ADa-municipal-de-fusagasug%C3%A1/"
-                                class="fa fa-linkedin"
-                                target="_blank"></a>
-                        </i>
+                        <h3>También puedes encontrar información de interés en nuestras redes sociales:</h3>
+                        <div class="icons-social-footer black">
+                            <i>
+                                <a
+                                    href="https://www.facebook.com/alcaldiafusagasugaoficial"
+                                    class="fa fa-facebook fb"
+                                    target="_blank"></a>
+                                <a
+                                    href="https://www.instagram.com/alcaldiafusagasugaoficial/"
+                                    class="fa fa-instagram in"
+                                    target="_blank"></a>
+                                <a
+                                    href="https://twitter.com/AlcFusagasuga"
+                                    class="fa fa-twitter tw"
+                                    target="_blank"></a>
+                                <a
+                                    href="https://www.linkedin.com/company/alcald%C3%ADa-municipal-de-fusagasug%C3%A1/"
+                                    class="fa fa-youtube yt"
+                                    target="_blank"></a>
+                            </i>
+                        </div>
                     </div>
                 </div>
             </div>
             <form class="form" action="https://formspree.io/f/mvojogje" method="POST">
                 <div class="form-container">
-                    <h2 class="form-title">Contáctenos</h2>
-                    <label for="name">Nombre *</label>
-                    <input type="text" class="form-input" placeholder="Nombre:" name="name">
+                    <label for="name">Nombres y Apellidos *</label>
+                    <input type="text" class="form-input" placeholder="Nombres y Apellidos" name="name">
+                    <label for="phone">Teléfono *</label>
+                    <input type="number" class="form-input" placeholder="Teléfono" name="phone">
                     <label for="email">Email *</label>
-                    <input type="email" class="form-input" placeholder="Email:" name="email">
+                    <input type="email" class="form-input" placeholder="Email" name="email">
                     <label for="message">Mensaje *</label>
                     <textarea
                         class="form-input form-input--message"
-                        placeholder="Mensaje:"
+                        placeholder="Mensaje"
                         name="message"></textarea>
 
                     <div class="button-send">
@@ -212,27 +239,27 @@
                     <div class="icons-social-footer">
                         <i>
                             <a
-                                href="https://www.facebook.com/alcaldiafusagasugaoficial"
-                                class="fa fa-facebook"
+                                href="https://www.facebook.com/profile.php?id=100095466946084"
+                                class="fa fa-facebook fb"
                                 target="_blank"></a>
                             <a
-                                href="https://www.instagram.com/alcaldiafusagasugaoficial/"
-                                class="fa fa-instagram"
+                                href="https://www.instagram.com/smpfusagasuga/"
+                                class="fa fa-instagram in"
                                 target="_blank"></a>
                             <a
-                                href="https://twitter.com/AlcFusagasuga"
-                                class="fa fa-twitter"
+                                href="https://twitter.com/mejoras_de25478"
+                                class="fa fa-twitter tw"
                                 target="_blank"></a>
                             <a
-                                href="https://www.linkedin.com/company/alcald%C3%ADa-municipal-de-fusagasug%C3%A1/"
-                                class="fa fa-linkedin"
+                                href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ"
+                                class="fa fa-youtube yt"
                                 target="_blank"></a>
                         </i>
                     </div>
                 </div>
             </div>
             <div class="grupo-2">
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--1">
                     <a href="https://federacionsmpc.org/" target="_blank">
                         <img src="img/FSMP.png" alt="Logo smp-fusagasuga">
                     </a>
@@ -242,7 +269,7 @@
                         <img src="img/GOVLOGO.png" alt="Logo smp-fusagasuga">
                     </a>
                 </figure>
-                <figure class="logo-g2">
+                <figure class="logo-g2 logo-g2--3">
                     <a href="https://alcaldiafusagasuga.gov.co/" target="_blank">
                         <img src="img/ALCALDIAFUSABLANCO.webp" alt="Logo smp-fusagasuga">
                     </a>
@@ -265,7 +292,7 @@
         <script src="js/map.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        <script src="js/mouseover.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLWx-XEEqjhRDSJOHtiCOBO6eqhd73PBI&callback=iniciarMap"></script>
     </body>
 </html>
