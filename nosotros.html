@@ -47,7 +47,7 @@
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </a>
                                 <div class="div__nosotros-menu" id="menu-nosotros">
-                                    <ul class="ul__nosotros-menu">
+                                    <ul class="ul__nosotros-menu" id="ul-nosotros">
                                         <li class="nosotros-menu--li">
                                             <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
                                         </li>
@@ -112,7 +112,7 @@
             </svg>
         </div>
         </header>
-        <main>
+        <main id="main-nosotros">
             <section class="section__nosotros" id="nosotros">
                 <h2 class="nosotros__titulo">Sociedad de Mejoras Públicas de Fusagasugá</h2>
                 <div class="decorador__separador"></div>
@@ -128,16 +128,18 @@
                     </p>
                 </div>
                 <div class="div__video div__video--presentacion"> 
-                    <iframe class="iframe__video--presentacion" title="vimeo-player" src="https://www.youtube.com/embed/kTOGVFPQ4s8?autoplay=0&hd=1&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
+                    <div id="player-nosotros">
+                        <!-- videoNosotros - API -->
+                    </div>
                 </div>
+            </section>
+            <div class="section__myv">
                 <div class="div__myv">
                         <div class="div__mision">
-                            <img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/2a/03/0a/c8/fachada-hacienda-coloma.jpg"/>
                             <div class="div__myv--textos">
-                                <h2 class="nosotros__titulo">Misión</h2>
+                                <h2 class="nosotros__titulo titulo--myv">Misión</h2>
                                 <div class="decorador__separador decorador__separador--myv"></div>
-                                <p class="nosotros__descripcion">Nuestra misión es trabajar de manera incansable para promover el desarrollo
+                                <p class="nosotros__descripcion desc--myv">Nuestra misión es trabajar de manera incansable para promover el desarrollo
                                     integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser
                                     agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación,
                                     la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos
@@ -148,9 +150,9 @@
                         </div>
                         <div class="div__vision">
                             <div class="div__myv--textos">
-                                <h2 class="nosotros__titulo">Visión</h2>
+                                <h2 class="nosotros__titulo titulo--myv">Visión</h2>
                                 <div class="decorador__separador decorador__separador--myv"></div>
-                                <p class="nosotros__descripcion"> Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
+                                <p class="nosotros__descripcion desc--myv"> Ser reconocidos como una entidad líder en el impulso del desarrollo local y la
                                     mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como
                                     referentes en la promoción de la participación ciudadana, la protección del
                                     entorno natural y la generación de espacios de convivencia y desarrollo
@@ -159,20 +161,23 @@
                                     contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus
                                     habitantes.</p>
                             </div>
-                            <img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/2a/03/0a/cf/capilla.jpg"/>
                         </div>
                 </div>
-            </section>
+            </div>
         </main>
         <section class="section__slider" id="socios">
+            <div class="div__socios"> 
+                <h1 class="titulo__socios">Junta Directiva de la Sociedad de Mejoras Públicas de Fusagasugá</h1>
+                <div class="decorador__separador ds--socios"></div>
+            </div>
             <div class="div__slider">
                 <img src="assets/left.svg" class="slider-arrow" id="before">
-
 
                 <section class="slider__body slider__body--show" data-id="1">
                     <div class="slider__textos">
                         <h2 class="subtitle">Dr. Agustín Gómez Sarmiento.</h2>
-                        <p>Presidente fundador, es un destacado abogado, consultor y litigante con una amplia trayectoria en el campo del derecho. Con una pasión innata por la justicia y el servicio a la comunidad, ha dedicado su vida profesional a promover el desarrollo integral y sostenible de diversas organizaciones y comunidades. <br>Con un fuerte compromiso hacia su comunidad y el desarrollo sostenible de su ciudad, ha dejado una huella indeleble como líder fundador de esta organización sin fines de lucro.
+                        <h3 class="sub-subtitle">Presidente</h3>
+                        <p class="sub-p">Presidente fundador de la Sociedad de Mejoras Públicas de Fusagasugá, es un destacado abogado, consultor y litigante con una amplia trayectoria en el campo del derecho.
                         </p>
                     </div>
                     <div class="imagen__socio"></div>
@@ -181,7 +186,8 @@
                 <section class="slider__body" data-id="2">
                     <div class="slider__textos">
                         <h2 class="subtitle">Dra. Ángela Caicedo.</h2>
-                        <p>Es una destacada abogada con una vasta experiencia en cooperación internacional y políticas públicas para el desarrollo. Su profundo compromiso con el progreso social y el bienestar colectivo la ha llevado a sobresalir en el campo del derecho y a ser un referente en la promoción del desarrollo sostenible.<br>En su rol como Vicepresidenta, la Dra. Angela Caicedo ha desempeña un papel clave en el desarrollo y ejecución de iniciativas transformadoras para la ciudad de Fusagasugá.
+                        <h3 class="sub-subtitle">Vicepresidenta</h3>
+                        <p class="sub-p">Destacada abogada con una amplia experiencia en cooperación internacional y políticas públicas para el desarrollo. Su profundo compromiso con el progreso social y el bienestar colectivo la ha llevado a sobresalir en el campo del derecho y a ser un referente en la promoción del desarrollo sostenible.
                         </p>
                     </div>
                     <div class="imagen__socio socio--2"></div>
@@ -190,7 +196,8 @@
                 <section class="slider__body" data-id="3">
                     <div class="slider__textos">
                         <h2 class="subtitle">Lilian Johanna Melo Sarria.</h2>
-                        <p>Es una talentosa y proactiva profesional que desempeña un rol fundamental como secretaria de la Sociedad de Mejoras Públicas de Fusagasugá.<br>Con una sólida formación en administración y una amplia experiencia en la gestión de oficinas, su labor es esencial para el buen funcionamiento y la eficiencia de la organización.<br>Como secretaria de la SMP, la Sra. Melo Sarria es responsable de coordinar y organizar todas las actividades administrativas y operativas de la sociedad.
+                        <h3 class="sub-subtitle">Secretaria</h3>
+                        <p class="sub-p">Talentosa y proactiva profesional que desempeña un rol fundamental como secretaria de la Sociedad de Mejoras Públicas de Fusagasugá. Como secretaria de la SMP, es responsable de coordinar y organizar todas las actividades administrativas y operativas.
                         </p>
                     </div>
                     <div class="imagen__socio socio--3"></div>
@@ -199,7 +206,8 @@
                 <section class="slider__body" data-id="4">
                     <div class="slider__textos">
                         <h2 class="subtitle">Carlota Méndez</h2>
-                        <p>Es una arquitecta talentosa y comprometida que asumirá un rol vital como encargada de la tesorería de la Sociedad de Mejoras Públicas de Fusagasugá (SMP). Con una formación sólida en arquitectura y una habilidad innata para la gestión financiera, su experiencia y pasión la convierten en una candidata ideal para esta posición.<br>Como responsable de la tesorería, la Sra. Méndez será la encargada de administrar los recursos financieros de la SMP con prudencia y transparencia.
+                        <h3 class="sub-subtitle">Tesorera</h3>
+                        <p class="sub-p">Arquitecta talentosa y comprometida con un rol vital como encargada de la tesorería de la SMP. Como responsable de la tesorería, es la encargada de administrar los recursos financieros de la SMP con prudencia y transparencia.
                         </p>
                     </div>
                     <div class="imagen__socio socio--4"></div>
@@ -207,10 +215,56 @@
                 <section class="slider__body" data-id="5">
                     <div class="slider__textos">
                         <h2 class="subtitle">Ana Eugenia Forero.</h2>
-                        <p> Es una destacada comunicadora y periodista que ha sido nombrada como Vocal de la SMP. Con una amplia experiencia en medios de comunicación y una pasión por la información veraz y relevante, su incorporación a la SMP será un activo invaluable para la organización. Desempeñará un papel fundamental en la promoción de la visión y misión de la sociedad. Su habilidad para comunicar de manera efectiva será esencial para difundir los proyectos y acciones que la SMP promueve en beneficio de la comunidad.
+                        <h3 class="sub-subtitle">Vocal</h3>
+                        <p class="sub-p">Comunicadora y periodista destacada, con una amplia experiencia en medios de comunicación y una pasión por la información veraz y relevante, su incorporación será un activo invaluable para la SMP.
                         </p>
                     </div>
                     <div class="imagen__socio socio--5"></div>
+                </section>
+                <section class="slider__body" data-id="6">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--6"></div>
+                </section>
+                <section class="slider__body" data-id="7">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--7"></div>
+                </section>
+                <section class="slider__body" data-id="8">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--8"></div>
+                </section>
+                <section class="slider__body" data-id="9">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--9"></div>
+                </section>
+                <section class="slider__body" data-id="10">
+                    <div class="slider__textos">
+                        <h2 class="subtitle">Socio SMP.</h2>
+                        <h3 class="sub-subtitle">Cargo</h3>
+                        <p class="sub-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae magnam atque laborum mollitia quidem officiis, ut totam molestiae asperiores dolor perspiciatis impedit amet cum. Ullam eius vero nemo tempora ipsa.
+                        </p>
+                    </div>
+                    <div class="imagen__socio socio--10"></div>
                 </section>
                 <img src="assets/right.svg" class="slider-arrow" id="next">
             </div>
@@ -319,6 +373,7 @@
         <script src="js/slider.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
-        </html>
         <script src="js/mouseover.js"></script>
+        <script src="js/youtube.api.js"></script>
     </body>
+</html>

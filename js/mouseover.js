@@ -2,14 +2,33 @@
 
 const nosotros = document.querySelector('#nosotros');
 const menuNosotros = document.querySelector('#menu-nosotros');
+const ulNosotros = document.querySelector('#ul-nosotros');
 
-const handleMouseOver = () => {
+const addMouseOverClass = () => {
     menuNosotros.classList.add('mouseover');
 };
 
-const handleMouseOut = () => {
+const removeMouseOverClass = () => {
     menuNosotros.classList.remove('mouseover');
 };
+
+const addActiveClass = () => {
+    ulNosotros.classList.add('ul--activo');
+};
+const removeActiveClass = () => {
+    ulNosotros.classList.remove('ul--activo');
+};
+
+const handleMouseOver = (event) => {
+    addMouseOverClass();
+    addActiveClass();
+};
+
+const handleMouseOut = (event) => {
+    removeMouseOverClass();
+    removeActiveClass();
+};
+
 
 nosotros.addEventListener('mouseover', handleMouseOver);
 nosotros.addEventListener('mouseout', handleMouseOut);

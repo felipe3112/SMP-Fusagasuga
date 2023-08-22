@@ -9,12 +9,19 @@
 html {scroll-behavior: smooth;}
 
 body {
-    font-family: 'Lora';
+    font-family: var(--font--primary);
     width: 100%;
     overflow-x: hidden;
     background-color: #FFFFFF;
 }
 
+:root {
+    --color-primary: #B6452C;
+    --color-secundary: #DDC5A2;
+
+    --font--primary: 'Lora';
+    --font--secundary: 'Overpass';
+  }
 
 /* **************************** HEADERS ***********************/
 .header{
@@ -93,7 +100,7 @@ body {
         padding: 0 2rem;
     }
     .ul-lista li{
-        padding: 2.5rem 0; 
+        padding: 2rem 0; 
     }
     .ul-lista a{
         padding: 2.5rem 1.25rem 1.75rem 1.25rem;
@@ -164,42 +171,51 @@ body {
     display: none;
 }
 .li__nosotros{
-    cursor: pointer;;
+    cursor: pointer;
 }
 .li__nosotros i{
     font-size: 1rem;
 }
 
 .div__nosotros-menu{
+    display: block;
     background: #fff;
-    display: none;
     width: 15rem;
     height: 0;
     padding: 0;
     right: 25.5rem;
     z-index: 10;
-    width: 15rem;
     position: absolute;
     top: 5rem;
     right: 21.65rem;
+    transition: all .3s ease;
 }
-.li__nosotros .ul__nosotros-menu{
-    list-style: none;
+.mouseover{
     display: flex;
+    height: 10rem;
+}
+.ul__nosotros-menu{
+    opacity: 0;
+    list-style: none;
     width: 100%;
-    height: max-content;
+    height: 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: flex; 
     gap: .3rem;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.ul--activo{
+    opacity: 1;
+    height: max-content;
 }
 .li__nosotros .nosotros-menu--li{
     display: flex;
-    color: #0000007c;
+    color: #000000a6;
     width: 100%;
     height: auto;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
     top: 0;
     font-weight: 400;
     cursor: pointer;
@@ -220,13 +236,9 @@ body {
     padding-bottom: 0;
 }
 .nosotros-menu--li:hover{
-    background: #ddc5a244;
+    background: #ddc29944;
 }
 
-.mouseover{
-    display: flex;
-    height: max-content;
-}
 /* -------------------------------- header ----------------------------------*/
 .textos-header{
     display: flex;
@@ -419,7 +431,7 @@ body {
         margin: 0 auto;
     }
     .h2__infovideo {
-        color: #B6452C;
+        color: var(--color-primary);
         font-size: 1.9rem;
         text-align: center;
     }
@@ -453,7 +465,7 @@ body {
     margin: 0 auto; /* Centra la sección horizontalmente */
 }
     .nosotros__titulo {
-        color: #B6452C;
+        color: var(--color-primary);
         font-size: 2.5rem;
         text-align: center;
         padding: .5rem 1.5rem;
@@ -461,7 +473,7 @@ body {
     .decorador__separador {
         width: 3.6rem;
         height: .8rem;
-        background-color: #B6452C;
+        background-color: var(--color-primary);
         margin: auto;
     }    
     .div__descripcion {
@@ -480,33 +492,35 @@ body {
     }
     .div__video--presentacion{
         height: auto;
-        width: 100%;
+        width: auto;
         margin: 2rem 0;
     }
-        .div__video .iframe__video--presentacion{
-            height: 38rem;
-            width: 100%;
-        }
+    .div__video--presentacion iframe{
+        width: 75rem;
+        height: 35rem;
+    }
     
+    .section__myv {
+        position: relative;
+        background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(../img/photo/todos2-color.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2rem;
+    }
     .div__myv {
         display: flex;
-        flex-flow: column nowrap;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
         max-width: 75rem;
         margin: 0 auto;
     }
-    .div__mision,
+    .div__mision{
+        padding: 0 25rem 0 2rem;
+    }
     .div__vision{
-        display: flex;
-        gap: 1rem;
-    }
-    .div__mision >.div__myv--textos,
-    .div__vision >.div__myv--textos{
-        width: 50%;
-    }
-    .div__mision > img,
-    .div__vision > img{
-        width: 50%;
+        padding: 0 2rem 0 25rem;
     }
     .div__myv--textos{
         display: flex;
@@ -515,49 +529,70 @@ body {
         gap: .5rem;
         padding: 1rem 2rem;
     }
+    .titulo--myv,
+    .desc--myv{
+        color: #ffffff;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .desc--myv{
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+    }
     .decorador__separador--myv{
         margin: 0 auto 1rem;
         height: .5rem;
+        background: var(--color-secundary);
     }
 
 /*----------------------------------------- slider-nosotros -------------------------------------------- */
 
 .section__slider{
+    display: flex;
+    flex-flow: column wrap;
     padding: 2.5rem 0;
     max-width: 75rem;
-    margin: 0 auto;
+    margin: 4rem auto;
+    gap: 4rem;
 }
+    .div__socios{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 2.5rem;
+    }
+    .titulo__socios{
+        color: var(--color-primary);
+        font-family: 'Lora';
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: center;
+    }
 
 .div__slider{
-    width: 90%;
-    min-height: 50vh;
+    width: 100%;
     max-width: 100vw;
-    margin: 0 auto;
+    margin: 1rem auto;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 3.1rem 1fr 3.1rem;
     align-items: center;
     gap: 1em;
 }
 
 .slider__body{
     display: grid;
+    gap: 1rem;
     grid-column: 2/3;
     grid-row: 1/2;
     opacity: 0;
     pointer-events: none;
     grid-template-columns: 1fr max-content;
+    justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -ms-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    transition: all 1s ease;
 }
 
 .slider__body--show{
@@ -566,29 +601,44 @@ body {
 }
 
 .slider__textos{
-    width: 80%;
-    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
     color: #523634;
-    padding: 1.5rem;
-    line-height: 1.5rem;
+    padding: 1rem 2rem 1rem 0;
+    line-height: 1.6rem;
 }
-
     .subtitle{
+        font-family: var(--font--primary);
         font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+        color: var(--color-primary);
+    }
+    .sub-subtitle{
+        color: var(--color-primary);
+    }
+    .sub-subtitle::after{
+        content: "";
+        display: block;
+        width: 7.5rem;
+        height: .2rem;
+        background-color: var(--color-primary);
+        margin-top: .2rem;
+    } 
+    .sub-p{
+        font-size: 1rem;
+        font-family: var(--font--secundary);
+        line-height: 1.8rem;
     }
 
     .imagen__socio{
         border-radius: 5%;
-        width: 15rem;
-        height: 15rem;
+        width: 17rem;
+        height: 17rem;
         background-image: url(/img/photo/01.jpg);
         background-size: cover;
-        -webkit-border-radius: 5%;
-        -moz-border-radius: 5%;
-        -ms-border-radius: 5%;
-        -o-border-radius: 5%;
-}
+    }
     .socio--2{
         background-image: url(/img/photo/02.jpg);
         background-size: cover;
@@ -598,29 +648,45 @@ body {
         background-size: cover;
     }
     .socio--4{
-        background-image: url();
+        background-image: url(/img/photo/04.jpg);
         background-size: cover;
     }
     .socio--5{
-        background-image: url();
+        background-image: url(/img/photo/05.jpg);
+        background-size: cover;
+    }
+    .socio--6{
+        background-image: url(/img/photo/06.jpg);
+        background-size: cover;
+    }
+    .socio--7{
+        background-image: url(/img/photo/07.jpg);
+        background-size: cover;
+    }
+    .socio--8{
+        background-image: url(/img/photo/08.jpg);
+        background-size: cover;
+    }
+    .socio--9{
+        background-image: url(/img/photo/09.jpg);
+        background-size: cover;
+    }
+    .socio--10{
+        background-image: url(/img/photo/10.jpg);
         background-size: cover;
     }
 
 .slider-arrow{
     cursor: pointer;
     width: 90%;
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -ms-transition: all .6s ease;
-    -o-transition: all .6s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 .slider-arrow:hover{
     transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
 }
 .slider-arrow:nth-of-type(2){
     justify-self: end;

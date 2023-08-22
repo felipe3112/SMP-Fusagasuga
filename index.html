@@ -48,7 +48,7 @@
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </a>
                                 <div class="div__nosotros-menu" id="menu-nosotros">
-                                    <ul class="ul__nosotros-menu">
+                                    <ul class="ul__nosotros-menu" id="ul-nosotros">
                                         <li class="nosotros-menu--li">
                                             <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
                                         </li>
@@ -108,7 +108,7 @@
                     <h1>Sociedad de Mejoras Públicas de Fusagasugá</h1>
                 </div>
                 <div class="div__button">
-                    <a href="nosotros.html#nosotros">
+                    <a href="nosotros.html#main-nosotros">
                         <button class="button-know">
                             <p>Conócenos</p>
                             <img src="assets/right.svg" class="know-assets" id="before">
@@ -128,7 +128,9 @@
             <section class="section__video">
                 <div class="divsection__video">
                     <div class="div__video div__video--index">
-                        <iframe src="https://www.youtube.com/embed/M4S7SNEV_XM?autoplay=1&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div id="player-index">
+                            <!-- videoIndex -->
+                        </div>
                     </div>
                     <div class="div__infovideo--index">
                         <h2 class="h2__infovideo">Nueva SMP de Fusagasugá: ¡Construyendo Juntos un Futuro Mejor!"</h2>
@@ -252,5 +254,6 @@
         <script src="js/navbar.js"></script>
         <script src="js/burguer.js"></script>
         <script src="js/mouseover.js"></script>
+        <script src="js/youtube.api.js"></script>
     </body>
 </html>
