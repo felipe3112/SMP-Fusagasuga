@@ -31,4 +31,5 @@ window.addEventListener('resize', function () {
         links.classList.remove('dos');
         links.className = ('ul-lista uno')
     }
-})
+});
+

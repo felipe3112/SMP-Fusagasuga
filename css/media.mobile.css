@@ -1,0 +1,39 @@
+/* -------------------------------------------450px...................................................... */
+@media (max-width:450px) {   
+    .navbar-section{
+        display: flex;
+        justify-content: space-around;
+        padding: 0rem .5rem;
+    }
+    .navbar-section .navbar__logo a img{
+        width: 160px;
+        height: 100%;
+    }
+    .navbar__logo img{
+        padding-left: 15px;
+    }
+    .icono{
+        height: auto;
+        width: 65px;
+        display: flex;
+    }
+    .icono span{
+        font-size: 2rem;
+    }
+    .icono .iconFalse{
+        display: none;
+    }
+    .icono.activo .iconTrue{
+        display: none;
+    }
+    .icono.activo .iconFalse{
+        display: block;
+    }
+    
+    .textos-header h1{
+        font-size: 3.5rem;
+    }
+    .button-main{
+        padding-top: 20rem;
+    }
+}
