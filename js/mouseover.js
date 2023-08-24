@@ -1,42 +1,44 @@
 'use strict';
 
-const nosotros = document.querySelector('#nosotros');
-const menuNosotros = document.querySelector('#menu-nosotros');
-const ulNosotros = document.querySelector('#ul-nosotros');
+const nosotrosElement = document.querySelector('#nosotros');
+const menuNosotrosElement = document.querySelector('#menu-nosotros');
+const ulNosotrosElement = document.querySelector('#ul-nosotros');
 
+// Funciones para agregar y eliminar clases de CSS
 const addMouseOverClass = () => {
-    menuNosotros.classList.add('mouseover');
+    menuNosotrosElement
+        .classList
+        .add('mouseover');
 };
 
 const removeMouseOverClass = () => {
-    menuNosotros.classList.remove('mouseover');
+    menuNosotrosElement
+        .classList
+        .remove('mouseover');
 };
 
 const addActiveClass = () => {
-    ulNosotros.classList.add('ul--activo');
-};
-const removeActiveClass = () => {
-    ulNosotros.classList.remove('ul--activo');
+    ulNosotrosElement
+        .classList
+        .add('ul--activo');
 };
 
-const handleMouseOver = (event) => {
+const removeActiveClass = () => {
+    ulNosotrosElement
+        .classList
+        .remove('ul--activo');
+};
+
+// eventos
+const handleMouseOver = () => {
     addMouseOverClass();
     addActiveClass();
 };
 
-const handleMouseOut = (event) => {
+const handleMouseOut = () => {
     removeMouseOverClass();
     removeActiveClass();
 };
 
-
-nosotros.addEventListener('mouseover', handleMouseOver);
-nosotros.addEventListener('mouseout', handleMouseOut);
-
-menuNosotros.addEventListener('mouseover', handleMouseOver);
-menuNosotros.addEventListener('mouseout', handleMouseOut);
-
-nosotros.addEventListener('pointerdown', ()=>{
-    menuNosotros.classList.toggle('mouseover');
-    ulNosotros.classList.toggle('ul--activo')
-})
+nosotrosElement.addEventListener('mouseover', handleMouseOver);
+nosotrosElement.addEventListener('mouseout', handleMouseOut);

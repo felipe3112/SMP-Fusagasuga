@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
 }
 .header--index {
-    background-image: linear-gradient(#b6452c7a, #b6452c25), url(../img/photo/todos-color.jpg);
+    background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/todos-color.jpg);
     background-size: cover;
 }
 
@@ -502,7 +502,7 @@ body {
     
     .section__myv {
         position: relative;
-        background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(../img/photo/todos2-color.jpg);
+        background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(https://storage.googleapis.com/smpfusagasuga/todos2-color.jpg);
         background-attachment: fixed;
         background-size: cover;
         padding: 2rem;
@@ -636,43 +636,43 @@ body {
         border-radius: 5%;
         width: 17rem;
         height: 17rem;
-        background-image: url(/img/photo/01.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/01.jpg);
         background-size: cover;
     }
     .socio--2{
-        background-image: url(/img/photo/02.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/02.jpg);
         background-size: cover;
     }
     .socio--3{
-        background-image: url(/img/photo/03.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/03.jpg);
         background-size: cover;
     }
     .socio--4{
-        background-image: url(/img/photo/04.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/04.jpg);
         background-size: cover;
     }
     .socio--5{
-        background-image: url(/img/photo/05.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/05.jpg);
         background-size: cover;
     }
     .socio--6{
-        background-image: url(/img/photo/06.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/06.jpg);
         background-size: cover;
     }
     .socio--7{
-        background-image: url(/img/photo/07.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/07.jpg);
         background-size: cover;
     }
     .socio--8{
-        background-image: url(/img/photo/08.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/08.jpg);
         background-size: cover;
     }
     .socio--9{
-        background-image: url(/img/photo/09.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/09.jpg);
         background-size: cover;
     }
     .socio--10{
-        background-image: url(/img/photo/10.jpg);
+        background-image: url(https://storage.googleapis.com/smpfusagasuga/10.jpg);
         background-size: cover;
     }
 

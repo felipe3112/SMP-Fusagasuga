@@ -9,7 +9,7 @@
     height: 100vh;
     }
     .header--index {
-        background-image: linear-gradient(#b6452c7a, #b6452c25), url(../img/photo/todos-vertical2.jpg);
+        background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/todos-vertical2.jpg);
     }
 
 

@@ -1,26 +1,19 @@
-(function(){
-    // obtenemos los sliders y los elementos (flechas)
+(function () {
+
     const sliders = [...document.querySelectorAll('.slider__body')];
     const arrowNext = document.querySelector('#next');
-    const arrowBefore = document.querySelector('#before');  
-    // variable
-    let value;
-    // eventos sig. y ant.
+    const arrowBefore = document.querySelector('#before');
+    
+    let currentSliderIndex = 0;
+    
     arrowNext.addEventListener('pointerdown', () => changePosition(1));
     arrowBefore.addEventListener('pointerdown', () => changePosition(-1));
-    // obtener el id
-    function changePosition(change){
-        const currentElement = Number(document.querySelector('.slider__body--show').dataset.id);
-
-        value = currentElement;
-        value += change;
-
-        console.log(sliders.length)
-        if(value === 0 || value == sliders.length+1){
-            value = value === 0 ? sliders.length : 1;
-        }
-
-        sliders[currentElement-1].classList.toggle('slider__body--show')
-        sliders[value-1].classList.toggle('slider__body--show')
+    
+    function changePosition(change) {
+        sliders[currentSliderIndex].classList.remove('slider__body--show');
+        
+        currentSliderIndex = (currentSliderIndex + change + sliders.length) % sliders.length;
+        
+        sliders[currentSliderIndex].classList.add('slider__body--show');
     }
 })();
