@@ -35,3 +35,8 @@ nosotros.addEventListener('mouseout', handleMouseOut);
 
 menuNosotros.addEventListener('mouseover', handleMouseOver);
 menuNosotros.addEventListener('mouseout', handleMouseOut);
+
+nosotros.addEventListener('pointerdown', ()=>{
+    menuNosotros.classList.toggle('mouseover');
+    ulNosotros.classList.toggle('ul--activo')
+})
