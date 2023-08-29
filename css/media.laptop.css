@@ -12,16 +12,15 @@
         background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/todos-vertical2.jpg);
     }
 
-
 /* /////////////////////////////////NAVBAR////////////////////////////////// */
-.navbar-section{
+    .navbar-section{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 10%;
     padding: 0;
     z-index: 500;
-}
+    }
 
 .icons-social__nav{
     display: none;
@@ -72,8 +71,9 @@
     width: 100vw;
     height: 100%;
     min-height: max-content;
-    transition: all .5s ease;
+    /* transition: all 5s ease; */
     gap: 2rem;
+
 }
     .uno{
         height: 0;
@@ -267,29 +267,19 @@
 }
 
 /* PORTAFOLIO  -----------------------------------------------------------*/
-.portafolio{
-    display: flex;
-    justify-content: center;
+.lightbox{
+    width: 100%;
+    justify-content: space-around;
 }
-    .lightbox .isActive {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+    .lightbox > .div-close,
+    .lightbox > .grande{
+    width: 100%;
+    max-width: 47rem;
+    height: auto;
     }
-    .lightbox .div-close{
-        justify-content: center;
-        height: 5rem;
+    .grande{
+        margin-bottom: 16rem;
     }
-    .div-close .close{
-        height: 3rem;
-        width: 3rem;
-    }
-    .lightbox .grande{
-        width: 90%;
-        height: max-content;
-    }
-
-
 /* CONTACT - FORMULARIO --------------------------------------------*/
 
 .contact{
