@@ -370,4 +370,58 @@
         text-align: center;
     }
 
+    /* mision y vision  */
+    .section__myv {
+        position: relative;
+        background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(https://storage.googleapis.com/smpfusagasuga/todos-vertical2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 1.5rem;
+    }
+    .div__myv{
+        display: flex;
+        flex-flow: column wrap ;
+    }
+    .titulo--myv{
+        font-size: 36px;
+    }
+    .desc--myv{
+        font-size: 18px;
+    }
+
+    .titulo__socios{
+        font-size: 36px;
+    }
+    .slider-arrow{
+        height: 100%;
+    }
+    .slider-arrow:hover{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+    .div__slider > .slider__body{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-p{
+        text-align: justify;
+    }
+    .imagen__socio{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    /* formulario  */
+
+    .contact-info{
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .google-maps{
+        margin-bottom: 4rem;
+    }
+
 }

@@ -215,17 +215,16 @@ body {
     color: #000000a6;
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: .1rem;
     top: 0;
     font-weight: 400;
     cursor: pointer;
 }
 .nosotros-menu--li .nosotros-menu--a{
     display: block;
-    padding: 1rem;
     width: 100%;
-    height: auto;
-    padding: 0;
+    height: 3.129rem;
+    padding: 1rem;
     color:#0000007c;
     font-size: 1rem;
     font-weight: 400;
@@ -275,7 +274,7 @@ body {
     display: inline-flex;
 }
     .div__button a{ text-decoration: none;}
-    .button-know p{color: #ffffff; font-size: 1.6em; font-family: 'overpass';}
+    .button-know p{color: #ffffff; font-size: 1.6em; font-family: var(--font--secundary);}
     .know-assets{
         filter: brightness(0) invert(1);
         -webkit-filter: brightness(0) invert(1);
@@ -287,16 +286,24 @@ body {
         position: relative;
         overflow: hidden;
         background-color: #B6452C;
-        transition: .6s ease;
+        transition: .8s ease;
         z-index: 1;
         color: #fff;
         align-items: center;
         gap: .6rem;
-        -webkit-transition: .6s ease;
-        -moz-transition: .6s ease;
-        -ms-transition: .6s ease;
-        -o-transition: .6s ease;
+        -webkit-transition: .8s ease;
+        -moz-transition: .8s ease;
+        -ms-transition: .8s ease;
+        -o-transition: .8s ease;
 }
+    .button--send{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .button--send:hover::before{
+        height: 40rem;
+    }
     .button-know::before{
         content: '';
         width: 0;
@@ -309,14 +316,6 @@ body {
         background: #ddc5a234;
         transition: .8s ease;
         z-index: -1;
-        -webkit-transform: translate(-50%, -50%) rotate(45deg);
-        -moz-transform: translate(-50%, -50%) rotate(45deg);
-        -ms-transform: translate(-50%, -50%) rotate(45deg);
-        -o-transform: translate(-50%, -50%) rotate(45deg);
-        -webkit-transition: .8s ease;
-        -moz-transition: .8s ease;
-        -ms-transition: .8s ease;
-        -o-transition: .8s ease;
 }
    .button-know:hover::before{
         width: 100%;
@@ -505,22 +504,21 @@ body {
         background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(https://storage.googleapis.com/smpfusagasuga/todos2-color.jpg);
         background-attachment: fixed;
         background-size: cover;
-        padding: 2rem;
+        padding: 4rem;
     }
     .div__myv {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        flex-direction: column;
-        justify-content: center;
         width: 100%;
         max-width: 75rem;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
     .div__mision{
-        padding: 0 25rem 0 2rem;
+        padding: 0;
     }
     .div__vision{
-        padding: 0 2rem 0 25rem;
+        padding: 0;
     }
     .div__myv--textos{
         display: flex;
@@ -532,12 +530,17 @@ body {
     .titulo--myv,
     .desc--myv{
         color: #ffffff;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .titulo--myv{
+        font-size: 3rem;
+        font-weight: bold;
     }
     .desc--myv{
-        font-size: 1.1rem;
-        font-weight: 400;
-        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: justify;
     }
     .decorador__separador--myv{
         margin: 0 auto 1rem;
@@ -761,7 +764,7 @@ body {
     }
     .lightbox .div-close{
         width: 100%;
-        max-width: 85%;
+        max-width: 75%;
         margin: 0 auto;
         display: flex;
         justify-content: right;
@@ -787,7 +790,7 @@ body {
 }
     .lightbox .grande{
         width: 100%;
-        max-width: 85%;
+        max-width: 75%;
         height: 100%;
         max-height: 80vh;
     }
@@ -1013,10 +1016,10 @@ body {
 
 /* ------------------------------formulario -----------------------------------------*/
 .contact{
-    font-family: 'Overpass';
+    font-family: var(--font--secundary);
     width: 100%;
     max-width: 75rem;
-    margin: 0 auto;
+    margin: 1rem auto 4rem auto;
     display: grid;
     grid-template-columns: 50% 50%;
     place-items: center;
@@ -1087,8 +1090,6 @@ body {
 }
    /*///////////////////////////////////////////// */
 .form{
-    background-image: linear-gradient(to right, #f4a36123, #e9c56a75);
-    font-family: 'Overpass';
     width: 100%;
     max-width: 100%;
     padding: 2rem;
@@ -1097,17 +1098,17 @@ body {
     .form-container{
         width: 100%;
         display: grid;
-        gap: 1em;
+        gap: .8em;
         grid-auto-columns: 100%;
     }
     .form-container label{
-        font-family: 'Overpass';
-        font-size: 1rem;
-        font-weight: 350;
+        font-family: var(--font--secundary);
+        font-size: 1.1rem;
+        font-weight: 400;
         color: #B6452C;
     }
     .form-input{
-        font-family: 'Overpass';
+        font-family: var(--font--secundary);
         font-size: 1rem;
         font-weight: 300;
         padding: .8rem;
@@ -1130,70 +1131,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-/*** ESTILOS BOTÓN GROW SKEW ***/
-.s-button{
-    font-weight: 700;
-    font-size: 1em;
-    width: 100%;
-    background: #C49227;
-    border: 1px solid #52A07B;
-    padding: 16px 20px;
-    border-radius: 0.2em;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
-    transition: all .3s ease;
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    -ms-border-radius: 0.2em;
-    -o-border-radius: 0.2em;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    cursor: pointer;
-}
-    .s-button:hover {
-        color: #fff;
-        font-weight: 600;
-        font-size: 1em;
-    }
-    .s-button::after {
-        content: "";
-        background: #52A07B;
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-}
-    .s-button:hover::after {
-        transition: all .5s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-        -webkit-transition: all .5s ease-out;
-        -moz-transition: all .5s ease-out;
-        -ms-transition: all .5s ease-out;
-        -o-transition: all .5s ease-out;
-        -webkit-transform: skewX(-45deg) scale(1, 1);
-        -moz-transform: skewX(-45deg) scale(1, 1);
-        -ms-transform: skewX(-45deg) scale(1, 1);
-        -o-transform: skewX(-45deg) scale(1, 1);
-}
 /* ---------------------------------------GOOGLE MAPS ------------------------------------*/
 .google-maps{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 #map{
     height: 500px;

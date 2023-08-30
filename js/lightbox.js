@@ -13,9 +13,9 @@ const imgListHandler = index =>{
 }
 
 imgList.forEach((eachImg , index)=>{
-    imgList[index].addEventListener('pointerdown', ()=>{
+    imgList[index].addEventListener('click', ()=>{
         imgListHandler(index)
     })
 })
 
-closeBtn.addEventListener('pointerdown', closeBtnHandler)
+closeBtn.addEventListener('click', closeBtnHandler)
