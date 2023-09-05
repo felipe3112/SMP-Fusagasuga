@@ -17,3 +17,5 @@
         sliders[currentSliderIndex].classList.add('slider__body--show');
     }
 })();
+
+

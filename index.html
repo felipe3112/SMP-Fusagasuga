@@ -21,7 +21,6 @@
     </head>
     <body>
         <header class="header header--index">
-            <!-- ****************************** NAVBAR ***********************-->
             <section class="navbar-section">
                 <div class="navbar__logo">
                     <figure>
@@ -42,10 +41,10 @@
                     <div class="nav.links">
                         <ul class="ul-lista uno" id="ul-lista">
                             <li>
-                                <a class="active" href="index.html">Inicio</a>
+                                <a class="a-inicio active" href="index.html">Inicio</a>
                             </li>
                             <li id="nosotros" class="li__nosotros">
-                                <a>Nosotros
+                                <a class="a-nosotros">Nosotros
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </a>
                                 <div class="div__nosotros-menu" id="menu-nosotros">
@@ -63,10 +62,10 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="galeria.html">Galería</a>
+                                <a href="galeria.html" class="a-galeria">Galería</a>
                             </li>
                             <li>
-                                <a href="contacto.html">Contáctenos</a>
+                                <a href="contacto.html" class="a-contacto">Contáctenos</a>
                             </li>
                         </ul>
                     </div>
@@ -102,8 +101,6 @@
                     </div>
                 </nav>
             </section>
-            
-            <!-- ******************************** TEXTOS DEL HEADER***************************** -->
             <section class="textos-header textos-header--index" id="headerText">
                 <div class="textos-header__h1 textos-header__h1--index">
                     <h1>Sociedad de Mejoras Públicas de Fusagasugá</h1>
@@ -117,14 +114,12 @@
                     </a>
                 </div>
             </section>
-            <!-- wave -->
         <div class="wave">
-            <svg viewBox="0 0 400 150" preserveAspectRatio="none">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0.00,49.98 C227.70,159.38 292.04,42.94 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
             </svg>
         </div>
         </header>
-        <!-- ********************* CONTENIDO DEL INDEX ****************** -->
         <main>
             <section class="section__video">
                 <div class="divsection__video">
@@ -134,20 +129,52 @@
                         </div>
                     </div>
                     <div class="div__infovideo--index">
-                        <h2 class="h2__infovideo">Nueva SMP de Fusagasugá: ¡Construyendo Juntos un Futuro Mejor!"</h2>
+                        <h2 class="h2__infovideo">Nueva Sociedad de Mejoras Públicas de Fusagasugá: <br> ¡Construyendo Juntos un Futuro Mejor!"</h2>
                         <div class="decorador__separador"></div>
-                        <p>Avanzando por el camino natural para la creación de una nueva Sociedad, se ha constituido la Sociedad de Mejoras Públicas de Fusagasugá, proceso que iniciamos el 22 de noviembre de 2022 con el acompañamiento directo, en cada una de sus etapas, de la Presidencia de la Federación. </p>
+                        <p>Avanzando por el camino natural para la creación de una nueva Sociedad, se ha constituido la Sociedad de Mejoras Públicas de Fusagasugá, proceso que iniciamos el 22 de noviembre de 2022 con el acompañamiento directo, en cada una de sus etapas, de la Presidencia de la Federación.
+                        <br>Su presidente fundador es el abogado, consultor y litigante, Dr.  Agustín Gómez Sarmiento. Como Vicepresidente: fue elegida la abogada, experta en cooperación internacional y políticas públicas para el desarrollo, Dra. Ángela Caicedo. En la Secretaría, se eligió a la empresaria Sra. Lilian Johanna Melo Sarria; en la Tesorería, a la arquitecta Carlota Méndez y como Vocal la comunicadora y periodista, Sra. Ana Eugenia Forero.</p>
                     </div>
-                </div>
-                <div class="div__infovideo--down">
-                    <p>Su presidente fundador es el abogado, consultor y litigante, Dr.  Agustín Gómez Sarmiento. Como Vicepresidente: fue elegida la abogada, experta en cooperación internacional y políticas públicas para el desarrollo, Dra. Ángela Caicedo. En la Secretaría, se eligió a la empresaria Sra. Lilian Johanna Melo Sarria; en la Tesorería, a la arquitecta Carlota Méndez y como Vocal la comunicadora y periodista, Sra. Ana Eugenia Forero.</p>
                 </div>
             </section>
         </main>
+        <div class="info__cards">
+            <h2 class="h2__infovideo">Lugares de Interés en Fusagasugá</h2>
+            <div class="decorador__separador"></div>
+        </div>
         <section class="section__cards">
-            <div class="div__card"></div>
-            <div class="div__card"></div>
-            <div class="div__card"></div>
+            <div class="div__card">
+                <h2>Casona Balmoral</h2>
+                <p>La Casona de Balmoral de Fusagasugá también llamada la quinta de Balmoral tiene un estilo colonial que evidencia el desarrollo de la región del Sumapaz.</p>
+                <img src="https://rutasumapaz.online/admin/storage/poiImages/1.jpg" alt="img">
+                <a href="https://rutasumapaz.online/verp/Casona%20del%20Balmoral" target="_blank">
+                    <button class="button-know btn--card">
+                        <p>Visitar</p>
+                        <img src="assets/right.svg" class="know-assets" id="before">
+                    </button>
+                </a>
+            </div>
+            <div class="div__card">
+                <h2>Casona Tierra Grata</h2>
+                <p>Fue construida entre 1930 y 1932 por encargo de Enrique Olaya Herrera a Vicente Nasi, siguiendo el estilo arquitectónico del Country Club de Bogotá.</p>
+                <img src="https://observatorio.alcaldiafusagasuga.gov.co/wp-content/uploads/sites/4/2023/06/WhatsApp-Image-2023-06-20-at-8.41.29-PM.jpeg" alt="tierra grata">
+                <a href="https://observatorio.alcaldiafusagasuga.gov.co/casona-tierra-grata/" target="_blank">
+                    <button class="button-know btn--card">
+                        <p>Visitar</p>
+                        <img src="assets/right.svg" class="know-assets" id="before">
+                    </button>
+                </a>
+            </div>
+            <div class="div__card">
+                <h2>Hacienda Coloma</h2>
+                <p>Si quieres aprender sobre el fascinante proceso de cultivar, producir, y procesar el café colombiano, lo puedes hacer a tan solo 90 minutos de Bogotá.</p>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/46/87/12/welcome-to-hacienda-coloma.jpg?w=1200&h=-1&s=1" alt="img">
+                <a href="https://www.tripadvisor.co/Attraction_Review-g1221356-d3505008-Reviews-Hacienda_Coloma-Fusagasuga_Cundinamarca_Department.html" target="_blank">
+                    <button class="button-know btn--card">
+                        <p>Visitar</p>
+                        <img src="assets/right.svg" class="know-assets" id="before">
+                    </button>
+                </a>
+            </div>
         </section>
         <!-- ********************** F O O T E R ************************* -->
         <footer class="footer">

@@ -9,7 +9,10 @@
     height: 100vh;
     }
     .header--index {
-        background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/todos-vertical2.jpg);
+        background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/AV01.jpg);
+    }
+    .header--nosotros {
+        background-image: linear-gradient(to right, #d313139c, #0b3f7088), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
     }
 
 /* /////////////////////////////////NAVBAR////////////////////////////////// */
