@@ -124,7 +124,7 @@ body {
         content: "";
         position: absolute;
         background: linear-gradient(to right, #2bc0e4, #eaecc6);
-        height: 3px;
+        height: 2.5px;
         bottom: .8rem;
         border-radius: 50%;
     }
@@ -137,7 +137,7 @@ body {
         border-radius: 50%;
         transform: translateX(-50%);
         width: 0;
-        height: 3px;
+        height: 2.5px;
         transition: width .4s ease;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -300,7 +300,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem;
+    gap: 4rem;
 }
     .textos-header__h1{
         position: relative;
@@ -311,16 +311,16 @@ body {
         color: #FFFFFF;
     }
     .textos-header__h1--index{
-        text-align: center;
+        text-align: start;
         font-size: 2rem;
-        padding: 0 10rem;
+        padding: 0 10rem 0 0;
     }
 
 .div__button{
     position: relative;
     width: 100%;
     height: auto;
-    justify-content: center;
+    justify-content: start;
     display: inline-flex;
 }
     .div__button a{ text-decoration: none;}
@@ -459,6 +459,7 @@ body {
     display: flex;
     flex-flow: column;
     width: 100%;
+    height: auto;
     max-width: 75rem;
     margin: 3rem auto;
     gap: 3.5rem;
@@ -467,6 +468,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+    height: auto;
     gap: 2rem;
 }
     .div__video {
@@ -476,9 +478,14 @@ body {
         height: auto;
         width: auto;
     }
+    .div__video--index{
+        width: 100%;
+        max-width: 75rem;
+        height: 35rem;
+    }
     .div__video--index iframe{
-        width: 55rem;
-        height: 30rem;
+        width: 80%;
+        height: 100%;
         border-radius: 5px;
         box-shadow: -5px 5px 18px #cccccc,
         5px -5px 18px #f4f4f4;
@@ -518,7 +525,7 @@ body {
         font-size: 1em;
         font-weight: 400;
         line-height: 2em;
-        text-align: justify;
+        text-align: center;
         color: #523634;
     }
     .div__infovideo--down p{
@@ -620,10 +627,10 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    gap: 1.5rem;
-    padding: 2.5rem 5%; /* Ajusta el padding a un valor relativo */
-    max-width: 75rem; /* Limita el ancho máximo para evitar estiramiento en pantallas grandes */
-    margin: 0 auto; /* Centra la sección horizontalmente */
+    gap: 2rem;
+    padding: 0;
+    max-width: 75rem;
+    margin: 3rem auto; 
 }
     .nosotros__titulo {
         color: var(--color-primary);
@@ -632,17 +639,17 @@ body {
         padding: .5rem 1.5rem;
     }
     .decorador__separador {
-        height: 5px;
+        height: 2.5px;
         background: linear-gradient(to right, #00467f, #a5cc82);
-        border-radius: 50%;
+        border-radius: 25px;
         margin: auto;
         left: 0;
         position: relative;
         animation: move 3s ease-in-out infinite;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
         -webkit-animation: move 3s ease-in-out infinite;
 }
     @keyframes move {
@@ -682,25 +689,30 @@ body {
         background-image: linear-gradient(to right, #d313139c, #0b3f70a9), url(https://storage.googleapis.com/smpfusagasuga/todos2-color.jpg);
         background-attachment: fixed;
         background-size: cover;
-        height: 105vh;
+        height: auto;
         width: 100%;
         margin: 5rem auto;
+        padding: 4rem 10rem;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        gap: 6rem;
         align-items: center;
 }
     .h1--myv{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
-
     .div__myv{
         display: flex;
-        justify-content: space-evenly;
-        max-width: 75rem;
-        flex-flow: row wrap;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
-        gap: 1rem;
+        max-width: 75rem;
+        margin: 0 auto;
+        gap: 4rem;
     }
     .ds__negative{
         background: linear-gradient(to right, #1d976c, #93f9b9);
@@ -710,11 +722,12 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
-        padding: 1rem;
-        width: 25rem;
+        padding: 2.5rem 2rem;
+        width: 100%;
         border-radius: 18px;
+        box-shadow: -2px 2px 20px #19553177;
         backdrop-filter: blur(10px);
-}
+    }
     .container__blur > h2{
         color: #fff;
         font-weight: bold;
@@ -1172,7 +1185,8 @@ body {
     margin: 0 auto;
 }
     .grupo-3 small{
-        font-size: .9rem;
+        font-size: .85rem;
+        font-weight: 300;
     }
     .design{
         display: flex;
@@ -1183,10 +1197,10 @@ body {
     }
     .design a small{
         transition: .1s ease;
-        color: #fff;
+        color: #FFFFFF;
     }
     .design small:hover{
-        color: #DDC5A2;
+        color: var(--color-secundary);
     }
 
 /* ------------------------------formulario -----------------------------------------*/
