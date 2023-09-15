@@ -24,6 +24,11 @@ body {
 
     --bg-button-primary: linear-gradient(to right, #25a4c4, #787965);
     --bg-button-hover: linear-gradient(to right, #11998e, #38ef7d);
+
+    --bg-lg-1: linear-gradient(to right, #d313139c, #0b3f7088);
+    --bg-lg-2: linear-gradient(#2783459c, #09182700);
+    --bg-lg-3: linear-gradient(#0c3072c7, #0c307200);
+    --bg-lg-4: linear-gradient( #26616194, #11632562);
   }
 
 /* **************************** HEADERS ***********************/
@@ -41,7 +46,7 @@ body {
 }
 
 .header--nosotros {
-    background-image: linear-gradient(#b6452c7a, #b6452c25), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
+    background: linear-gradient(#7a2a2a50, #0a80478c), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -55,7 +60,7 @@ body {
 }
 
 .header--contacto {
-    background-image:linear-gradient( #26616181, #11632675), url(https://storage.googleapis.com/smpfusagasuga/centro02.png);
+    background-image: var(--bg-lg-4), url(https://storage.googleapis.com/smpfusagasuga/centro02.png);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -233,6 +238,10 @@ body {
     top: 3.75rem;
     right: 30rem;
     transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 .mouseover{
     display: flex;
@@ -248,10 +257,15 @@ body {
     flex-direction: column;
     gap: .3rem;
     overflow: hidden;
-    transition: all .4s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 .ul--activo{
     opacity: 1;
+    height: auto;
     height: max-content;
 }
 .li__nosotros .nosotros-menu--li{
@@ -307,8 +321,10 @@ body {
         width: 100%;
         max-width: 75rem;
         height: auto;
-        font-size: 3rem;
-        color: #FFFFFF;
+        font-size: 2.5rem;
+        shape-outside: polygon(0% 40%, 50% 60%, 100% 40%);
+        color: #ffffff;
+        text-shadow: 1px 1px 10px #410a246b;
     }
     .textos-header__h1--index{
         text-align: start;
@@ -831,12 +847,17 @@ body {
     }
 
     .imagen__socio{
+        transition: all .3s ease;
         border-radius: 5%;
         width: 17rem;
         height: 17rem;
         background-image: url(https://storage.googleapis.com/smpfusagasuga/001.jpg);
         background-size: cover;
-    }
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+}
     .socio--2{
         background-image: url(https://storage.googleapis.com/smpfusagasuga/002.jpg);
         background-size: cover;
@@ -889,6 +910,54 @@ body {
 .slider-arrow:nth-of-type(2){
     justify-self: end;
 }
+
+.section__members{
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 75rem;
+    margin: 2rem auto 8rem;
+    gap: 3.5rem;
+}
+.div__member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+    .imagen__member{
+        border-radius: 50%;
+        width: 17rem;
+        height: 16rem;
+        transition: all .3s ease;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+}
+    .imagen__member:hover,
+    .imagen__socio:hover{
+        filter:sepia(25%);
+        -webkit-filter:sepia(25%);
+}
+    .h2__member{
+        padding: .5rem !important;
+        font-size: 1.5rem !important;
+    }
+    .h2__cargo{
+        font-size: 1rem !important;
+        font-family: var(--font--primary);
+        font-weight: 400;
+    }
 
 /* ---------------------------------------------------GALERIA---------------------------------------------------- */
 
