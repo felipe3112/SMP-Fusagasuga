@@ -962,11 +962,13 @@ body {
 /* ---------------------------------------------------GALERIA---------------------------------------------------- */
 
 .section__portafolio{
-    min-height: 100vh;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    margin: 4rem auto;
 }
     .flex{
         width: 100%;
@@ -1059,6 +1061,20 @@ body {
         max-height: 80vh;
     }
 
+.section__galeria-video{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 4rem auto;
+}
+    .galeria__video{
+        width: 25rem;
+        height: 10rem;
+    }
 /*---------------------------------------------------- FOOTER----------------------------------*/
 .footer{
     background-image: linear-gradient(#2c2a29, #2c2a29d3), url(https://storage.googleapis.com/smpfusagasuga/centro01.jpg);
@@ -1281,7 +1297,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     place-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .contact-info{
     display: flex;
@@ -1291,15 +1307,11 @@ body {
     justify-content: space-around;
     padding-right: 3rem;
 }
-    .contact-info h2{
-        font-family: 'Lora';
+    .h2__contact{
         text-align: start;
-        font-size: 2em;
-        font-weight: 600;
-        color: #B6452C;
     }
     .contact-info p{
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 300;
         line-height: 1.5;
     }
@@ -1327,7 +1339,7 @@ body {
         cursor: pointer;
 }
     .box-contact-info .items-contact li:hover{
-        color: #B6452C;
+        color: #283f2d;
     }
 
 .icons-social-contact{
@@ -1363,7 +1375,7 @@ body {
         font-family: var(--font--secundary);
         font-size: 1.1rem;
         font-weight: 400;
-        color: #B6452C;
+        color: #0a2a33;
     }
     .form-input{
         font-family: var(--font--secundary);
