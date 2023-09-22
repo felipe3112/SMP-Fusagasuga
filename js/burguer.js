@@ -46,10 +46,10 @@ window.addEventListener("resize", function() {
     // Verifica si el ancho de la ventana es menor o igual a 750px
     if (windowWidth <= 700) {
         // Cambia el atributo src de la imagen
-        logoImage.src = "img/logo/new-logo-horizon-white.webp";
+        logoImage.src = 'img/logo/orchid-black.svg';
     } else {
         // Si el ancho es mayor a 750px, vuelve a establecer el src original
-        logoImage.src = "img/logo/new-logo-vertical-white.webp";
+        logoImage.src = 'img/logo/orchid-black.svg';
     }
 });
 
