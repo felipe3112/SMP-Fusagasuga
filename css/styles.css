@@ -29,6 +29,7 @@ body {
     --bg-lg-2: linear-gradient(#2783459c, #09182700);
     --bg-lg-3: linear-gradient(#0c3072c7, #0c307200);
     --bg-lg-4: linear-gradient( #26616194, #11632562);
+    --bg-myv: linear-gradient(#7a2a2a50, #0a80478c);
   }
 
 /* **************************** HEADERS ***********************/
@@ -41,26 +42,26 @@ body {
     margin: 0 auto;
 }
 .header--index {
-    background-image: linear-gradient(to right, #d313139c, #0b3f7088), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
+    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
     background-size: cover;
 }
 
 .header--nosotros {
-    background: linear-gradient(#7a2a2a50, #0a80478c), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
+    background: var(--bg-myv), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .header--galeria {
-    background-image:linear-gradient(#0c3072c7, #0c307200), url(https://storage.googleapis.com/smpfusagasuga/casona-balmoral.jpg);
+    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/casona-balmoral.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .header--contacto {
-    background-image: var(--bg-lg-4), url(https://storage.googleapis.com/smpfusagasuga/centro02.png);
+    background-image: var(--bg-myv), url(https://storage.googleapis.com/smpfusagasuga/centro02.png);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
