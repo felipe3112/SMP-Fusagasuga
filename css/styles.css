@@ -138,15 +138,19 @@ body {
         background: linear-gradient(to right, #2bc0e4, #eaecc6);
         height: 2.5px;
         bottom: .2rem;
-        border-radius: 50%;
-    }
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
     .ul-lista a::before{
         content: "";
         position: absolute;
         bottom: .2rem;
         /*/*background-color: #d88a5d;
         */background: linear-gradient(to right, #2bc0e4, #eaecc6);
-        border-radius: 50%;
+        border-radius: 0;
         transform: translateX(-50%);
         width: 0;
         height: 2.5px;
@@ -155,10 +159,10 @@ body {
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
         -webkit-transition: width .4s ease;
         -moz-transition: width .4s ease;
         -ms-transition: width .4s ease;
@@ -408,6 +412,46 @@ body {
         cursor: pointer;
     }
 
+/* -------------------------------------------MOVE-HEADER-------------------------------------------- */
+.div__move-header{
+    display: flex;
+    position: absolute;
+    height: 4rem;
+    width: 3rem;
+    top: 40%;
+}
+    .left-move{
+        right: 0;
+    }
+    .right-move{
+        left: 0;
+    }
+
+    .button__move{
+        width: 100%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+}
+    .button__move:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+    .button__move>img{
+        filter:invert(100%);
+        -webkit-filter:invert(100%);
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
 /* -------------------------------------------WAVE-------------------------------------------- */
 .wave{
     height: 12rem; 
@@ -507,8 +551,8 @@ body {
         height: 35rem;
     }
     .div__video--index iframe{
-        width: 80%;
-        height: 100%;
+        width: 50rem;
+        height: 28rem;
         border-radius: 5px;
         box-shadow: -5px 5px 18px #cccccc,
         5px -5px 18px #f4f4f4;
@@ -523,7 +567,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     gap: 2rem;
-    padding: 0 8rem;
+    padding: 2rem 9rem;
 }
     .div__infovideo--down{
         width: 100%;
@@ -665,24 +709,24 @@ body {
     }
     .decorador__separador {
         height: 2.5px;
-        background: linear-gradient(to right, #00467f, #a5cc82);
-        border-radius: 25px;
+        background: var(--bg-button-hover);
+        border-radius: 0;
         margin: auto;
         left: 0;
         position: relative;
-        animation: move 3s ease-in-out infinite;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-        -webkit-animation: move 3s ease-in-out infinite;
+        animation: move 1s ease-in-out infinite;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        -webkit-animation: move 1s ease-in-out infinite;
 }
     @keyframes move {
         0%,100%{
-            width: 6rem;
+            width: 30rem;
         }
         50%{
-            width: 10rem;
+            width: 29rem;
         }
     }    
     .div__descripcion {
@@ -990,21 +1034,26 @@ body {
 
 .section__portafolio{
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    gap: .5rem;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 75rem;
     margin: 4rem auto;
 }
+    .info__portafolio{
+        width: 100%;
+    }
     .flex{
         width: 100%;
         max-width: 75rem;
         margin: 0 auto;
         display: flex;
+        padding: 3rem 0 2rem;
         justify-content: center;
         flex-flow: row wrap;
-        gap: 1rem;
+        gap: 2.5rem;
     }
     .flex .img{
         width: 100%;
@@ -1019,15 +1068,15 @@ body {
     .overflow{
         box-shadow: 0 0 15px #1d053d8c;
         overflow: hidden;
-        width: 15rem;
+        width: 20rem;
     }
     .overflow:hover .img{
-        transform: scale(1.2);
+        transform: scale(1.1);
         filter: sepia(60%);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
         -webkit-filter: sepia(60%);
 }
     .lightbox{
@@ -1053,38 +1102,43 @@ body {
     .lightbox.isActive{
         opacity: 1;
         pointer-events: auto;
-        z-index: 10;
+        z-index: 100;
     }
-    .lightbox .div-close{
-        width: 100%;
-        max-width: 75%;
-        margin: 0 auto;
+    .div-close{
+        position: absolute;
+        width: max-content;
         display: flex;
-        justify-content: right;
+        top: 1.5rem;
+        right: 2.5rem;
     }
-    .lightbox .close{
-        width: 2.5rem;
+    .close{
+        width: 2rem;
         background-color: transparent;
-        color: white;
+        color: rgb(219, 204, 204);
         cursor: pointer;
         border: none;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-    }
-    .lightbox .close:hover{
-        transform:scale(1.1);
-        -webkit-transform:scale(1.1);
-        -moz-transform:scale(1.1);
-        -ms-transform:scale(1.1);
-        -o-transform:scale(1.1);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
 }
-    .lightbox .grande{
-        width: 100%;
+    .close:hover{
+        color: #FFFFFF;
+    }
+    .div__move-lightbox{
+        position: absolute;
+    }
+    .rbox{
+        margin-left: 2.5rem;
+    }
+    .lbox{
+        margin-right: 2.5rem;
+    }
+    .grande{
+        width: auto;
         max-width: 75%;
-        height: 100%;
+        height: auto;
         max-height: 80vh;
     }
 
@@ -1093,15 +1147,47 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: .5rem;
     width: 100%;
     max-width: 75rem;
     margin: 4rem auto;
 }
     .galeria__video{
-        width: 25rem;
-        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: safe;
+        width: 100%;
+        height: auto;
+        gap: 2.5rem;
+        padding: .5rem;
     }
+    .galeria__video > iframe {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .flex__video{
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem 3rem;
+        gap: 4rem;
+    }
+    .info__galeria-video{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    
 /*---------------------------------------------------- FOOTER----------------------------------*/
 .footer{
     background-image: linear-gradient(#2c2a29, #2c2a29d3), url(https://storage.googleapis.com/smpfusagasuga/centro01.jpg);
