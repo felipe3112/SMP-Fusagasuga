@@ -97,8 +97,9 @@ body {
         filter: invert(100%);
         -webkit-filter: invert(100%);
         width: 90%;
-        height: 130%;
+        height: 100%;
     }
+    
 .nav-main{
     display: flex;
     justify-content: center;
@@ -415,15 +416,19 @@ body {
 /* -------------------------------------------MOVE-HEADER-------------------------------------------- */
 .div__move-header{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     height: 4rem;
     width: 3rem;
     top: 40%;
 }
     .left-move{
+        margin-right: 1rem;
         right: 0;
     }
     .right-move{
+        margin-left: 1rem;
         left: 0;
     }
 
@@ -538,6 +543,18 @@ body {
     height: auto;
     gap: 2rem;
 }
+.section__fondo {
+    position: relative;
+    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
     .div__video {
         display: flex;
         justify-content: center;
@@ -551,11 +568,10 @@ body {
         height: 35rem;
     }
     .div__video--index iframe{
-        width: 50rem;
-        height: 28rem;
+        width: 53rem;
+        height: 30rem;
         border-radius: 5px;
-        box-shadow: -5px 5px 18px #cccccc,
-        5px -5px 18px #f4f4f4;
+        cursor: pointer;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
@@ -603,8 +619,6 @@ body {
         text-align: justify;
         color: #523634;
     }
-
-
     /* ---------------------------------- CARDS --------------------------------*/
     .info__cards{
         margin-top: 4rem;
