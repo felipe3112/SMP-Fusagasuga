@@ -1588,3 +1588,16 @@ body {
     width: 100%;
 }
 
+
+.hidden{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.show{
+    opacity: 1;
+}

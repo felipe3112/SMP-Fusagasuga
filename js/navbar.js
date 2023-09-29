@@ -41,4 +41,12 @@ function mostrarScroll(){
     }
 }
 
-window.addEventListener('scroll', mostrarScroll);
+window.addEventListener('scroll', mostrarScroll); 
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    console.log('DOMContentLoaded se ha cargado');
+    let containers = document.querySelectorAll('.hidden');
+    containers.forEach(container =>{
+        container.classList.add('show');
+    })
+});
