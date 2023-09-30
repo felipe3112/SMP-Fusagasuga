@@ -48,7 +48,7 @@ body {
 }
 
 .header--nosotros {
-    background: var(--bg-lg-3), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
+    background: var(--bg-lg-3), url(https://storage.googleapis.com/smpfusagasuga/A02.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -826,7 +826,7 @@ body {
     
     .section__myv {
         position: relative;
-        background-image: var(--bg-myv), url(https://storage.googleapis.com/smpfusagasuga/A02.jpg);
+        background-image: var(--bg-myv), url(https://storage.googleapis.com/smpfusagasuga/A01.jpg);
         background-attachment: fixed;
         background-size: cover;
         height: auto;
