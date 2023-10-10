@@ -55,7 +55,7 @@ body {
 }
 
 .header--galeria {
-    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/casona-balmoral.jpg);
+    background-image: var(--bg-lg-3), url(https://storage.googleapis.com/smpfusagasuga/casona-balmoral.jpg);
     position: relative;
     background-attachment: fixed;
     background-size: cover;
