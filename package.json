@@ -1,0 +1,23 @@
+{
+  "name": "smp-fusagasuga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe3112/SMP-Fusagasuga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe3112/SMP-Fusagasuga/issues"
+  },
+  "homepage": "https://github.com/felipe3112/SMP-Fusagasuga#readme",
+  "devDependencies": {
+    "sass": "^1.69.1"
+  }
+}

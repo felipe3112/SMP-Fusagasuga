@@ -10,8 +10,10 @@
         <meta name="description" content="Bienvenido a la Sociedad de Mejoras Públicas de Fusagasugá. Descubre nuestros servicios y proyectos para mejorar la comunidad y la infraestructura de Fusagasugá.">
         <link rel="shortcut icon" href="img/logo/LOGO-F.png" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/stylesc.css">
         <link rel="stylesheet" href="css/media.laptop.css">
         <link rel="stylesheet" href="css/media.mobile.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -54,10 +56,10 @@
                                             <a class="nosotros-menu--a" href="nosotros.html">Quienes Somos</a>
                                         </li>
                                         <li class="nosotros-menu--li">
-                                            <a class="nosotros-menu--a" href="nosotros.html#myv">Misión y Visión</a>
+                                            <a class="nosotros-menu--a" href="nosotros.html#socios">Socios SMP</a>
                                         </li>
                                         <li class="nosotros-menu--li">
-                                            <a class="nosotros-menu--a" href="nosotros.html#socios">Socios SMP</a>
+                                            <a class="nosotros-menu--a" href="nosotros.html#section-myv">Misión y Visión</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -88,7 +90,7 @@
                         <div class="icon twiter">
                             <a href="https://twitter.com/mejoras_de25478" target="_blank">
                                 <span>
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
                                 </span>
                             </a>
                         </div>
@@ -128,13 +130,35 @@
             </svg>
         </div>
         </header>
-        <main id="main-nosotros">
+        <main>
+
+            <section class="section__nosotros" id="nosotros">
+                <div class="div__infovideo--index">
+                    <h2 class="h2__info animado">Sociedad de Mejoras Públicas de Fusagasugá</h2>
+                    <div class="decorador__separador animado"></div>
+                    <p class="p__info animado">Somos una organización sin ánimo de lucro, de carácter cívico y privado,
+                        dedicada al progreso y bienestar de nuestra comunidad. Trabajamos en
+                        colaboración con entidades públicas y privadas para impulsar proyectos y
+                        acciones que promuevan el desarrollo sostenible de Fusagasugá.
+                        <br><br>
+                        Participamos activamente en la construcción del futuro de Fusagasugá, su región
+                        y el país. Nos enorgullece ser parte activa de la transformación de la ciudad,
+                        construyendo un futuro mejor para todos.
+                    </p>
+                </div>
+                <div class="div__video div__video--presentacion animado"> 
+                    <div id="player-nosotros">
+                        <!-- videoNosotros - API -->
+                    </div>
+                </div>
+            </section>
+
             <section class="section__slider" id="socios">
                 <div class="div__socios"> 
                     <h1 class="h2__info animado">Junta Directiva <br> Sociedad de Mejoras Públicas de Fusagasugá</h1>
                 </div>
                 <div class="div__slider animado">
-                    <img src="assets/left.svg" class="slider-arrow animado" id="before">
+                    <img src="assets/left.svg" class="slider-arrow animado before" id="before">
     
                     <section class="slider__body slider__body--show" data-id="1">
                         <div class="imagen__socio"></div>
@@ -184,7 +208,7 @@
                         </div>
                         
                     </section>
-                    <img src="assets/right.svg" class="slider-arrow animado" id="next">
+                    <img src="assets/right.svg" class="slider-arrow next animado" id="next">
                 </div>
             </section>
             <div class="div__socios"> 
@@ -227,48 +251,32 @@
                     </div>
                 </div>
             </section>
-            <section class="section__nosotros" id="nosotros">
-                <div class="div__infovideo--index">
-                    <h2 class="h2__info animado">Sociedad de Mejoras Públicas de Fusagasugá</h2>
-                    <div class="decorador__separador animado"></div>
-                    <p class="p__info animado">Somos una organización sin ánimo de lucro, de carácter cívico y privado,
-                        dedicada al progreso y bienestar de nuestra comunidad. Trabajamos en
-                        colaboración con entidades públicas y privadas para impulsar proyectos y
-                        acciones que promuevan el desarrollo sostenible de Fusagasugá.
-                        <br><br>
-                        Participamos activamente en la construcción del futuro de Fusagasugá, su región
-                        y el país. Nos enorgullece ser parte activa de la transformación de la ciudad,
-                        construyendo un futuro mejor para todos.
-                    </p>
-                </div>
-                <div class="div__video div__video--index animado"> 
-                    <div id="player-nosotros">
-                        <!-- videoNosotros - API -->
-                    </div>
-                </div>
-            </section>
-            <section class="section__myv" id="myv">
-                <div class="textos-header__h1 h1--myv animado">
-                    <h1>Misión, Visión <br>&<br> Objetivo</h1>
-                    <div class="decorador__separador ds__negative"></div>
-                </div>
-                <div class="div__myv">
-                    <div class="container__blur animado">
-                        <h2>Misión</h2>
-                        <p>Nuestra misión es trabajar de manera incansable para promover el desarrollo integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación, la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos fomentar la participación ciudadana, la gestión responsable de los recursos y la preservación de nuestro patrimonio, con el objetivo de construir una ciudad inclusiva, equitativa y próspera.</p>
-                    </div>
-                    <div class="container__blur animado">
-                        <h2>Visión</h2>
-                        <p>Ser reconocidos como una entidad líder en el impulso del desarrollo local y la mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como referentes en la promoción de la participación ciudadana, la protección del entorno natural y la generación de espacios de convivencia y desarrollo comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su cultura, su cuidado del medio ambiente y su espíritu de solidaridad, contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus habitantes.</p>
-                    </div>
-                    <div class="container__blur animado">
-                        <h2>Objetivo</h2>
-                        <p>Para el cumplimiento de nuestro objetivo, abordamos problemáticas sobre el adecuado uso del espacio público, el ordenamiento territorial, la seguridad ciudadana, la cultura ciudadana y la conciencia civil. Para ello, hemos de volver al pasado y conocer la historia e identificarnos como grupo para defender la identidad que con orgullo permita avanzar a esta sociedad al unísono.</p>
-                    </div>
-                </div>
-            </section>
-            
         </main>
+
+        <section class="et-hero-tabs" id="section-myv">
+            <h1 class="animado">MISION, VISION <br>Y <br> OBJETIVO</h1>
+            <h3 class="animado">Sociedad de Mejoras Públicas de Fusagasugá</h3>
+            <div class="et-hero-tabs-container">
+                <a class="et-hero-tab" href="#tab-es6">Misión</a>
+                <a class="et-hero-tab" href="#tab-flexbox">Visión</a>
+                <a class="et-hero-tab" href="#tab-react">Objetivo</a>
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+        <section class="et-main">
+            <section class="et-slide" id="tab-es6">
+                <h1>MISIÓN</h1>
+                <p>Nuestra misión es trabajar de manera incansable para promover el desarrollo integral y sostenible de Fusagasugá y su comunidad. Nos comprometemos a ser agentes de cambio, impulsando proyectos y acciones que fortalezcan la educación, la cultura, el medio ambiente y el bienestar de los ciudadanos. Buscamos fomentar la participación ciudadana, la gestión responsable de los recursos y la preservación de nuestro patrimonio, con el objetivo de construir una ciudad inclusiva, equitativa y próspera.</p>
+            </section>
+            <section class="et-slide" id="tab-flexbox">
+                <h1>VISIÓN</h1>
+                <p>Ser reconocidos como una entidad líder en el impulso del desarrollo local y la mejora de la calidad de vida en Fusagasugá. Trabajamos para consolidarnos como referentes en la promoción de la participación ciudadana, la protección del entorno natural y la generación de espacios de convivencia y desarrollo comunitario. Aspiramos a construir una ciudad que destaque por su bienestar, su cultura, su cuidado del medio ambiente y su espíritu de solidaridad, contribuyendo así al progreso de Fusagasugá y al bienestar de todos sus habitantes.</p>
+            </section>
+            <section class="et-slide" id="tab-react">
+                <h1>OBJETIVO</h1>
+                <p>Para el cumplimiento de nuestro objetivo, abordamos problemáticas sobre el adecuado uso del espacio público, el ordenamiento territorial, la seguridad ciudadana, la cultura ciudadana y la conciencia civil. Para ello, hemos de volver al pasado y conocer la historia e identificarnos como grupo para defender la identidad que con orgullo permita avanzar a esta sociedad al unísono.</p>
+            </section>
+        </section>
 
         <footer class="footer">
             <div class="grupo-1">
@@ -327,7 +335,7 @@
                                 target="_blank"></a>
                             <a
                                 href="https://twitter.com/mejoras_de25478"
-                                class="fa fa-twitter tw"
+                                class="fa-brands fa-x-twitter tw"
                                 target="_blank"></a>
                             <a
                                 href="https://www.youtube.com/channel/UCAOELOofo6BSGLEmnWrmDuQ"
@@ -374,5 +382,6 @@
         <script src="js/burguer.js"></script>
         <script src="js/mouseover.js"></script>
         <script src="js/youtube.api.js"></script>
+        <script src="js/et-main.js"></script>
     </body>
 </html>

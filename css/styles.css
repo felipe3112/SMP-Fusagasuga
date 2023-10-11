@@ -18,6 +18,8 @@ body {
 
 :root {
     --color-primary: linear-gradient(to right, #31aa61, #064a8f);
+    --color-p1: #93F9B9;
+    --color-p2: #1D976C;
     --color-secundary: #DDC5A2;
 
     --font--primary: 'Lora';
@@ -584,15 +586,14 @@ body {
 }
 .section__fondo {
     position: relative;
-    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
+    background-image: var(--bg-lg-3), url(https://storage.googleapis.com/smpfusagasuga/bosque.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: auto;
+    height: 40rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
 }
     .div__video {
         display: flex;
@@ -603,27 +604,24 @@ body {
     }
     .max-width{
         width: 100%;
-        border-radius: 10px;
         backdrop-filter: blur(20px);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
+        background: linear-gradient(to right, #02aab000, #00cdab80, #02aab000);
+    }
     .gv-index{
         width: 100%;
         max-width: 75rem;
-        margin: 2rem auto;
+        margin: 0 auto;
+        padding: 0 !important;
         height: 28rem !important;
         display: flex;
         justify-content: center;
         align-items: safe;
 }
     .gv-index > iframe{
-        margin-top: 2.4rem;
+        margin-top: 2rem;
     }
     .infog-index{
-        margin-top: 2.4rem;
+        margin-top: 2rem;
         filter: invert(100%);
         -webkit-filter: invert(100%);
     }
@@ -649,7 +647,7 @@ body {
         margin: 0 auto;
     }
     .h2__info {
-        background: var(--color-primary);
+        background: var(--color-p2);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -668,6 +666,7 @@ body {
         line-height: 2em;
         text-align: center;
         color: #523634;
+        padding: 1rem 1rem 0;
     }
     .div__infovideo--down p{
         font-family: var(--font--secundary);
@@ -768,7 +767,7 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    gap: 2rem;
+    gap: 1rem;
     padding: 0;
     max-width: 75rem;
     margin: 3rem auto; 
@@ -780,27 +779,18 @@ body {
         padding: .5rem 1.5rem;
     }
     .decorador__separador {
-        height: 2.5px;
+        height: 5px;
+        width: 15rem;
         background: var(--bg-button-hover);
         border-radius: 0;
         margin: auto;
         left: 0;
         position: relative;
-        animation: move 1s ease-in-out infinite;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
-        -webkit-animation: move 1s ease-in-out infinite;
 }
-    @keyframes move {
-        0%,100%{
-            width: 30rem;
-        }
-        50%{
-            width: 29rem;
-        }
-    }    
     .div__descripcion {
         display: flex;
         flex-direction: column;
@@ -818,12 +808,17 @@ body {
     .div__video--presentacion{
         height: auto;
         width: auto;
-        margin: 2rem 0;
-    }
+        padding: 1rem 9rem;
+}
     .div__video--presentacion iframe{
-        width: 75rem;
-        height: 35rem;
-    }
+        width: 50rem;
+        height: 28rem;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
     
     .section__myv {
         position: relative;
@@ -840,65 +835,18 @@ body {
         gap: 6rem;
         align-items: center;
 }
-    .h1--myv{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 0 auto;
-    }
-    .div__myv{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        max-width: 75rem;
-        margin: 0 auto;
-        gap: 2.5rem;
-    }
-    .ds__negative{
-        background: linear-gradient(to right, #1d976c, #93f9b9);
-    }
-    .container__blur{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        padding: 2.5rem 7rem 2.5rem 3rem;
-        width: 100%;
-        border-radius: 10px;
-        backdrop-filter: blur(40px);
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
-    .container__blur > h2{
-        color: #fff;
-        font-weight: bold;
-        font-family: var(--font--primary);
-        font-size: 2.5rem;
-    }
-    .container__blur > p{
-        text-align: start;
-        color: #f1f1f1;
-        font-weight: 300;
-        font-size: 1.1rem;
-        padding-left: 1.5rem;
-        font-family: var(--font--secundary);
-    }
+
+
+
 /*----------------------------------------- slider-nosotros -------------------------------------------- */
 
 .section__slider{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2.5rem 0;
+    padding: 2.5rem 0;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(to right, #348f4f0e, #56b4d34d);
 }
     .div__socios{
         display: flex;
@@ -915,12 +863,13 @@ body {
         place-items: center;
         justify-content: center;
         grid-template-columns: 4rem auto 4rem;
-        gap: 3rem;
-        margin: 4rem 0;
+        gap: 1rem;
+        padding-top: 1rem;
     }
     .slider__body{
         display: grid;
-        width: 50rem;
+        gap: .5rem;
+        width: 40rem;
         place-items: center;
         grid-column: 2/2;
         grid-row: 1;
@@ -933,7 +882,7 @@ body {
         -moz-transition: all .6s ease;
         -ms-transition: all .6s ease;
         -o-transition: all .6s ease;
-    }
+}
     .slider__body--show{
         opacity: 1;
     }
@@ -967,15 +916,23 @@ body {
     .imagen__socio{
         transition: all .3s ease;
         border-radius: 5%;
-        width: 17rem;
-        height: 20rem;
+        width: 14rem;
+        height: 15rem;
         background-image: url(https://storage.googleapis.com/smpfusagasuga/001-NF.png);
         background-size: cover;
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -ms-transition: all .3s ease;
         -o-transition: all .3s ease;
-}
+    }
+    .imagen__socio::before{
+        content: "";
+        width: 14rem;
+        height: 1rem;
+        margin-top: 15rem;
+        position: absolute;
+        background: #1D976C;
+    }
     .socio--2{
         background-image: url(https://storage.googleapis.com/smpfusagasuga/002-NF.png);
         background-size: cover;
@@ -1015,17 +972,19 @@ body {
 
 .slider-arrow{
     cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 20px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+}
+.before{
+    background: linear-gradient(to right, #93F9B9, #fafafa);
+}
+.next{
+    background: linear-gradient(to right, #fafafa, #93F9B9);
 }
 .slider-arrow:hover{
     transform: scale(1.1);
@@ -1043,8 +1002,8 @@ body {
     justify-content: center;
     flex-flow: row wrap;
     width: 100%;
-    max-width: 75rem;
-    margin: 1rem auto 8rem;
+    max-width: 65rem;
+    margin: 2rem auto;
     gap: 1rem;
 }
 .div__member{
@@ -1052,19 +1011,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     overflow: hidden;
     width: auto;
     height: auto;
 }
     .imagen__member{
-        width: 15rem;
+        width: 14rem;
         height: 15rem;
         transition: all .3s ease;
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -ms-transition: all .3s ease;
         -o-transition: all .3s ease;
+}
+.imagen__member::before{
+    content: "";
+    width: 14rem;
+    height: 1rem;
+    margin-top: 15rem;
+    position: absolute;
+    background: #93F9B9;
 }
     .h2__socio{
         padding: .5rem !important;
@@ -1073,7 +1040,6 @@ body {
     }
 
 /* ---------------------------------------------------GALERIA---------------------------------------------------- */
-
 .section__portafolio{
     display: flex;
     flex-flow: column;
@@ -1095,7 +1061,7 @@ body {
         padding: 3rem 0 2rem;
         justify-content: center;
         flex-flow: row wrap;
-        gap: .5rem;
+        gap: 1rem;
     }
     .flex .img{
         width: 100%;
@@ -1111,7 +1077,12 @@ body {
         box-shadow: 0 0 5px #1d053d8c;
         overflow: hidden;
         width: 20rem;
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
     .overflow:hover .img{
         transform: scale(1.1);
         filter: sepia(60%);
@@ -1203,6 +1174,22 @@ body {
         height: auto;
         gap: 2.5rem;
         padding: .5rem;
+    }
+    .gv0::before{
+        content: "";
+        width: 100vw;
+        height: 20rem;
+        background: linear-gradient(to right, #93f9b817, #27cf948e, #93f9b817);
+        position: absolute;
+        z-index: -1;
+    }
+    .gv1::before{
+        content: "";
+        width: 100vw;
+        height: 20rem;
+        background: linear-gradient(to right, #93f9b817, #2746cf62, #93f9b817);
+        position: absolute;
+        z-index: -1;
     }
     .galeria__video > iframe {
         border-radius: 10px;
@@ -1579,16 +1566,16 @@ body {
 }
 /* ---------------------------------------GOOGLE MAPS ------------------------------------*/
 .google-maps{
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 0;
     margin-bottom: 1rem;
 }
 #map{
     height: 500px;
     width: 100%;
 }
-
 
 .hidden{
     opacity: 0;
