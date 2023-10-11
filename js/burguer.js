@@ -34,22 +34,3 @@ window.addEventListener('resize', function () {
 });
 
 
-// imagen de logo de footer
-// Obtén una referencia al elemento de la imagen
-const logoImage = document.getElementById('footer-logo');
-
-// Agrega un event listener para que la función se ejecute cuando cambie el tamaño de la ventana
-window.addEventListener("resize", function() {
-    // Obtén el ancho actual de la ventana
-    const windowWidth = window.innerWidth;
-
-    // Verifica si el ancho de la ventana es menor o igual a 750px
-    if (windowWidth <= 700) {
-        // Cambia el atributo src de la imagen
-        logoImage.src = 'img/logo/orchid-black.svg';
-    } else {
-        // Si el ancho es mayor a 750px, vuelve a establecer el src original
-        logoImage.src = 'img/logo/orchid-black.svg';
-    }
-});
-
