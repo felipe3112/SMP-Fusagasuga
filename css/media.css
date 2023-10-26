@@ -1,23 +1,24 @@
-:root {
-    --color-primary: linear-gradient(to right, #31aa61, #064a8f);
-    --color-p1: #93F9B9;
-    --color-p2: #1D976C;
-    --color-secundary: #DDC5A2;
 
-    --font--primary: 'Lora';
-    --font--secundary: 'Overpass';
-
-    --bg-button-primary: linear-gradient(to right, #25a4c4, #787965);
-    --bg-button-hover: linear-gradient(to right, #11998e, #38ef7d);
-
-    --bg-lg-1: linear-gradient(to right, #d313139c, #0b3f7088);
-    --bg-lg-2: linear-gradient(#2783459c, #09182700);
-    --bg-lg-3: linear-gradient(#17418f8a, #0c307200);
-    --bg-lg-4: linear-gradient( #26616194, #11632562);
-    --bg-myv: linear-gradient(#7a2a2a50, #0a80478c);
-  }
 /* -------------------------------laptop------------------------------------------------------ */
 @media (max-width:1024px){
+    :root {
+        --color-primary: linear-gradient(to right, #31aa61, #064a8f);
+        --color-p1: #93F9B9;
+        --color-p2: #1D976C;
+        --color-secundary: #DDC5A2;
+    
+        --font--primary: 'Lora';
+        --font--secundary: 'Overpass';
+    
+        --bg-button-primary: linear-gradient(to right, #25a4c4, #787965);
+        --bg-button-hover: linear-gradient(to right, #11998e, #38ef7d);
+    
+        --bg-lg-1: linear-gradient(to right, #d313139c, #0b3f7088);
+        --bg-lg-2: linear-gradient(#2783459c, #09182700);
+        --bg-lg-3: linear-gradient(#17418f8a, #0c307200);
+        --bg-lg-4: linear-gradient( #26616194, #11632562);
+        --bg-myv: linear-gradient(#7a2a2a50, #0a80478c);
+      }
 *{
     margin: 0;
     padding: 0;

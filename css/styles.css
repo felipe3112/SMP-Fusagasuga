@@ -17,10 +17,10 @@ body {
 }
 
 :root {
-    --color-primary: linear-gradient(to right, #31aa61, #064a8f);
-    --color-p1: #93F9B9;
-    --color-p2: #1D976C;
-    --color-secundary: #DDC5A2;
+    --color-primary: linear-gradient(to right, #206d69, #04223f);
+    --color-p1: #0f64b441;
+    --color-p2: #04223f;
+    --color-secundary: #4e4331;
 
     --font--primary: 'Lora';
     --font--secundary: 'Overpass';
@@ -38,17 +38,21 @@ body {
 /* **************************** HEADERS ***********************/
 .header{
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     position: relative;
     background-attachment: fixed;
     background-size: 100% 100%; 
     margin: 0 auto;
 }
-.header--index {
-    background-image: var(--bg-lg-1), url(https://storage.googleapis.com/smpfusagasuga/hacienda-coloma.jpg);
-    background-size: cover;
+.wave--index{
+    display: none;
 }
 
+.header--index{
+    background: var(--bg-lg-3), url(/img/FOTO\ HEADER\ SMPF-rec.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
 .header--nosotros {
     background: var(--bg-lg-3), url(https://storage.googleapis.com/smpfusagasuga/A02.jpg);
     position: relative;
@@ -98,10 +102,9 @@ body {
         height: 100%;
     }
     .navbar__logo figure img{
-        filter: invert(100%);
-        -webkit-filter: invert(100%);
-        width: 90%;
-        height: 100%;
+        margin-top: 10px;
+        width: auto;
+        height: 80%;
     }
     
 .nav-main{
@@ -575,7 +578,13 @@ body {
     height: auto;
     max-width: 75rem;
     margin: 2rem auto;
-    gap: 3rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.section__video > img{
+    width: 30rem;
+    height: 11rem;
 }
 .divsection__video {
     display: flex;
@@ -781,7 +790,7 @@ body {
     .decorador__separador {
         height: 5px;
         width: 15rem;
-        background: var(--bg-button-hover);
+        background: linear-gradient(to right,#04223f94, #1162ad3d);
         border-radius: 0;
         margin: auto;
         left: 0;
@@ -1182,6 +1191,7 @@ body {
         background: linear-gradient(to right, #93f9b817, #27cf948e, #93f9b817);
         position: absolute;
         z-index: -1;
+        margin-top: 1rem;
     }
     .gv1::before{
         content: "";
@@ -1190,6 +1200,7 @@ body {
         background: linear-gradient(to right, #93f9b817, #2746cf62, #93f9b817);
         position: absolute;
         z-index: -1;
+        margin-top: 1rem;
     }
     .galeria__video > iframe {
         border-radius: 10px;
@@ -1210,6 +1221,7 @@ body {
         gap: 4rem;
     }
     .info__galeria-video{
+        margin-top: 1.5rem;
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -1265,14 +1277,13 @@ body {
         top: 1rem;
     }
     .footer__logo{
-        width: 80%;
-        height: 10rem;
+        width: auto;
+        height: auto;
     }
     .footer__logo img{
+        margin-top: 2rem;
         width: 100%;
-        height: 100%;
-        filter: invert(100%);
-        -webkit-filter: invert(100%);
+        height: 70%;
     }
     .box-1 > h2{
         display: flex;
