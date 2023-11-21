@@ -779,7 +779,7 @@ body {
     gap: 1rem;
     padding: 0;
     max-width: 75rem;
-    margin: 3rem auto; 
+    margin: 4rem auto; 
 }
     .nosotros__titulo {
         color: var(--color-primary);
